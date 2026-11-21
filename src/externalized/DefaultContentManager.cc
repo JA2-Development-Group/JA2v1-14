@@ -1223,6 +1223,10 @@ bool DefaultContentManager::loadGameData(BinaryData const& binaryData)
 	// docs/weapon-reload-ap-plan.md, R4
 	CheckWeaponReloadAPs(m_items, m_gamePolicy->weapon_reload_ap);
 
+	// docs/tilesets-json-and-item-tile-types-plan.md, stage 2 (T7)
+	CheckItemTileFiles(m_items, m_tilesets, [this](uint8_t const tileset, ST::string const& file)
+		{ return doesGameResExists(getTilesetResourceName(tileset, file)); });
+
 	// docs/enemy-equipment-progress-plan.md, stage 1
 	for (ST::string const& warning : MissingLowEnemyTiers(m_items))
 	{

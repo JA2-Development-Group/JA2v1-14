@@ -358,7 +358,13 @@ const ST::string gTileSurfaceName[NUMBEROFTILETYPES] =
 	"MISS1",
 	"MISS2",
 	"MISS3",
-	"WIREFRAME"
+	"WIREFRAME",
+
+	"NEWGUNS",
+	"NEWITEMS",
+	"ITEMS4",
+	"ITEMS5",
+	"ITEMS6"
 };
 
 
@@ -546,7 +552,13 @@ UINT16 const gNumTilesPerType[NUMBEROFTILETYPES] =
 	FIRSTMISS5 - FIRSTMISS1 + 1,
 	SECONDMISS5 - SECONDMISS1 + 1,
 	THIRDMISS14 - THIRDMISS1 + 1,
-	WIREFRAMES15 - WIREFRAMES1 + 1
+	WIREFRAMES15 - WIREFRAMES1 + 1,
+
+	NEW_GUN_TILES,
+	NEW_ITEM_TILES,
+	P4ITEM_TILES,
+	P5ITEM_TILES,
+	P6ITEM_TILES
 };
 
 
@@ -703,12 +715,8 @@ void SetSpecificDatabaseValues(UINT16 const type, UINT16 const database_elem, TI
 		te.uiFlags |= OBJECTLAYER_USEZHEIGHT;
 	}
 
-	// Set UI Elements to use object z level
-	if (GUNS <= type && type <= P2ITEMS)
-	{
-		te.uiFlags |= OBJECTLAYER_USEZHEIGHT;
-	}
-	if (type == P3ITEMS)
+	// Items on the ground use object z level
+	if (IsItemTileType(type))
 	{
 		te.uiFlags |= OBJECTLAYER_USEZHEIGHT;
 	}
@@ -782,5 +790,37 @@ TEST(TileDat, itemTileCounts)
 	for (UINT32 type = 0; type < NUMBEROFTILETYPES; ++type) total += gNumTilesPerType[type];
 	EXPECT_EQ(total, static_cast<UINT32>(NUMBEROFTILES));
 	EXPECT_LT(NUMBEROFTILES, 32767);
+}
+
+// The item tile types for new items (docs/tilesets-json-and-item-tile-types-plan.md,
+// stage 2): at the end of the types and of the tiles, T6 counts
+TEST(TileDat, newItemTileTypes)
+{
+	EXPECT_EQ(NEW_GUNS,  WIREFRAMES + 1);
+	EXPECT_EQ(P6ITEMS + 1, NUMBEROFTILETYPES);
+	EXPECT_EQ(gNumTilesPerType[NEW_GUNS],  2000);
+	EXPECT_EQ(gNumTilesPerType[NEW_ITEMS], 2000);
+	EXPECT_EQ(gNumTilesPerType[P4ITEMS],   1000);
+	EXPECT_EQ(gNumTilesPerType[P5ITEMS],   1000);
+	EXPECT_EQ(gNumTilesPerType[P6ITEMS],   1000);
+	EXPECT_EQ(NEWGUN_LAST  - NEWGUN1  + 1, NEW_GUN_TILES);
+	EXPECT_EQ(NEWITEM_LAST - NEWITEM1 + 1, NEW_ITEM_TILES);
+	EXPECT_EQ(P6ITEM_LAST  - P6ITEM1  + 1, P6ITEM_TILES);
+	EXPECT_EQ(P6ITEM_LAST + 1, NUMBEROFTILES);
+
+	// the older tiles keep their indices: the new ones start after the wireframes
+	UINT32 start = 0;
+	for (UINT32 type = 0; type < NEW_GUNS; ++type) start += gNumTilesPerType[type];
+	EXPECT_EQ(start, static_cast<UINT32>(NEWGUN1));
+	EXPECT_EQ(start, static_cast<UINT32>(WIREFRAMES15) + 1);
+	for (UINT32 type = NEW_GUNS; type < P4ITEMS; ++type) start += gNumTilesPerType[type];
+	EXPECT_EQ(start, static_cast<UINT32>(P4ITEM1));
+
+	// every type has a name
+	for (UINT32 type = 0; type < NUMBEROFTILETYPES; ++type) EXPECT_FALSE(gTileSurfaceName[type].empty()) << type;
+
+	for (UINT32 const type : { GUNS, P1ITEMS, P2ITEMS, P3ITEMS }) { EXPECT_TRUE(IsItemTileType(type)); EXPECT_FALSE(IsNewItemTileType(type)); }
+	for (UINT32 const type : { NEW_GUNS, NEW_ITEMS, P4ITEMS, P5ITEMS, P6ITEMS }) { EXPECT_TRUE(IsItemTileType(type)); EXPECT_TRUE(IsNewItemTileType(type)); }
+	for (UINT32 const type : { FIRSTTEXTURE, WINDOWSHATTER, BODYEXPLOSION, WIREFRAMES }) EXPECT_FALSE(IsItemTileType(type));
 }
 #endif

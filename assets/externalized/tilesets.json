@@ -5,6 +5,8 @@
 //  ambientId  the sector ambience sound set
 //  files      tile type -> picture file of this tileset; a tile type left out uses
 //             the file of tileset 0 (GENERIC 1)
+// The item tile types NEW_GUNS, NEW_ITEMS, P4ITEMS-P6ITEMS of GENERIC 1 were added by
+// hand (stage 2); their files may be missing while no item uses them.
 [
     {
         "index": 0,
@@ -161,7 +163,12 @@
             "FIRSTMISS": "miss1.sti",
             "SECONDMISS": "w_miss.sti",
             "THIRDMISS": "ripple.sti",
-            "WIREFRAMES": "wirefram.sti"
+            "WIREFRAMES": "wirefram.sti",
+            "NEW_GUNS": "sm_new_guns.sti",
+            "NEW_ITEMS": "sm_new_items.sti",
+            "P4ITEMS": "smp4items.sti",
+            "P5ITEMS": "smp5items.sti",
+            "P6ITEMS": "smp6items.sti"
         }
     },
     {

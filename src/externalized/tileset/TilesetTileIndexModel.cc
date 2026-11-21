@@ -158,7 +158,12 @@ constexpr std::array<char const *, TileTypeDefines::NUMBEROFTILETYPES> namesArra
 	"FIRSTMISS",
 	"SECONDMISS",
 	"THIRDMISS",
-	"WIREFRAMES"
+	"WIREFRAMES",
+	"NEW_GUNS",
+	"NEW_ITEMS",
+	"P4ITEMS",
+	"P5ITEMS",
+	"P6ITEMS"
 };
 
 TileTypeDefines deserializeTileTypeDefine(ST::string const& str)

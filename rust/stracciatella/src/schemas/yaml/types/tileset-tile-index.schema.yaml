@@ -158,6 +158,11 @@ properties:
       - SECONDMISS
       - THIRDMISS
       - WIREFRAMES
+      - NEW_GUNS
+      - NEW_ITEMS
+      - P4ITEMS
+      - P5ITEMS
+      - P6ITEMS
   subIndex:
     title: Subindex
     description: The index of the image within the tile type

@@ -1,12 +1,13 @@
 # Tilesets in JSON and new item tile types - plan
 
 Status: plan written 2026-11-21, decisions T1-T8 decided 2026-11-21 (all A, as
-recommended). Implemented on the Weapons branch.
+recommended). Implemented on the Weapons branch. Tilesets in JSON and new item tile
+types COMPLETE (2026-11-21).
 
 | Stage | Commit | State |
 |---|---|---|
-| 1 - tilesets from JSON | this commit | game-verified |
-| 2 - new item tile types | - | planned |
+| 1 - tilesets from JSON | 4f434ede9 | game-verified |
+| 2 - new item tile types | this commit | game-verified |
 
 New items should get picture files of their own, sorted by kind:
 
@@ -194,6 +195,14 @@ ambient id 0); `assets/externalized/tilesets.json`; schema `tilesets.schema.yaml
   tileset list.
 
 ### Stage 2 - new item tile types
+
+Done: `NEW_GUNS`, `NEW_ITEMS`, `P4ITEMS`, `P5ITEMS`, `P6ITEMS` after `WIREFRAMES`,
+tiles `NEWGUN1` ... `P6ITEM_LAST` after `WIREFRAMES15` (15,855 tiles); counts,
+readable names, `namesArray`, schema enum; `IsItemTileType` (object layer flag) and
+`IsNewItemTileType` (`TileDat.h`); GENERIC 1 files in `tilesets.json`;
+`CheckItemTileFiles` at game start and the `P1ITEMS` stand-in in
+`LoadTileSurfaces` (T7); tests `TileDat.newItemTileTypes`,
+`TilesetModel.itemTileFiles`.
 
 - `TileTypeDefines`: the five types at the end (T5); `TileDefines`: their ranges
   after `WIREFRAMES15` (T6 counts as constants next to `GUN_TILES` ...).

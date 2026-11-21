@@ -1,6 +1,7 @@
 #include "TilesetModel.h"
 
 #include "Exceptions.h"
+#include "ItemModel.h"
 #include "TilesetTileIndexModel.h"
 #include "World_Tileset_Enums.h"
 
@@ -58,9 +59,42 @@ std::vector<TilesetModel> TilesetModel::deserializeAll(JsonValue const& json)
 }
 
 
+void CheckItemTileFiles(std::vector<const ItemModel*> const& items,
+	std::vector<TilesetModel> const& tilesets,
+	std::function<bool(uint8_t tileset, ST::string const& file)> const& fileExists)
+{
+	uint8_t const defaultTileset = tilesets.size() == JA25_NUM_TILESETS ? DEFAULT_JA25_TILESET : GENERIC_1;
+	if (defaultTileset >= tilesets.size()) return; // deserializeAll checked the count
+	auto const& files = tilesets[defaultTileset].files;
+
+	for (const ItemModel* const item : items)
+	{
+		if (!item) continue;
+		TileTypeDefines const type = item->getTileGraphic().tileType;
+		if (!IsNewItemTileType(type)) continue;
+
+		auto const file = files.find(type);
+		if (file == files.end())
+		{
+			throw DataError(ST::format("Item `{}`: its ground picture type {} has no file in tilesets.json (tileset {})",
+				item->getInternalName(), TileTypeName(type), defaultTileset));
+		}
+		if (!fileExists(defaultTileset, file->second))
+		{
+			throw DataError(ST::format("Item `{}`: the file `{}` of its ground picture type {} is missing (Tilesets/{}/)",
+				item->getInternalName(), file->second, TileTypeName(type), defaultTileset));
+		}
+	}
+}
+
+
 #ifdef WITH_UNITTESTS
 #include "gtest/gtest.h"
 #include "DefaultContentManagerUT.h"
+#include "ItemModel.h"
+#include "Item_Types.h"
+
+#include <memory>
 
 // The exported data (docs/tilesets-json-and-item-tile-types-plan.md, stage 1)
 TEST(TilesetModel, loadsTheExportedData)
@@ -80,6 +114,12 @@ TEST(TilesetModel, loadsTheExportedData)
 	EXPECT_EQ(generic.files.at(P1ITEMS), "smp1items.sti");
 	EXPECT_EQ(generic.files.at(P2ITEMS), "smp2items.sti");
 	EXPECT_EQ(generic.files.at(P3ITEMS), "smp3items.sti");
+	// stage 2: the item tile types for new items
+	EXPECT_EQ(generic.files.at(NEW_GUNS),  "sm_new_guns.sti");
+	EXPECT_EQ(generic.files.at(NEW_ITEMS), "sm_new_items.sti");
+	EXPECT_EQ(generic.files.at(P4ITEMS),   "smp4items.sti");
+	EXPECT_EQ(generic.files.at(P5ITEMS),   "smp5items.sti");
+	EXPECT_EQ(generic.files.at(P6ITEMS),   "smp6items.sti");
 
 	// another tileset has only some files of its own
 	TilesetModel const& caves = tilesets[CAVES_1];
@@ -126,5 +166,42 @@ TEST(TilesetModel, checks)
 		TilesetsJson(3, "{}"))), DataError);
 	EXPECT_NO_THROW(TilesetModel::deserializeAll(JsonValue::deserialize(
 		TilesetsJson(JA25_NUM_TILESETS, "{}"))));
+}
+// docs/tilesets-json-and-item-tile-types-plan.md, stage 2 (T7)
+static std::unique_ptr<ItemModel> ItemOnTiles(char const* name, TileTypeDefines const type)
+{
+	return std::make_unique<ItemModel>(
+		7000, ST::string(name), ST::string("short"), ST::string("name"), ST::string("description"),
+		IC_MISC, 0, INVALIDCURS,
+		InventoryGraphicsModel(GraphicModel("interface/mdp4items.sti", 0), GraphicModel("bigitems/p4item0.sti", 0)),
+		TilesetTileIndexModel(type, 1),
+		0, 0, 0, 0, 0, 0, 0);
+}
+
+TEST(TilesetModel, itemTileFiles)
+{
+	EXPECT_EQ(TileTypeFromName("P4ITEMS"), P4ITEMS);
+	EXPECT_EQ(TileTypeFromName("NEW_GUNS"), NEW_GUNS);
+	EXPECT_EQ(TileTypeName(P6ITEMS), "P6ITEMS");
+
+	auto const tilesets = TilesetModel::deserializeAll(JsonValue::deserialize(
+		TilesetsJson(VANILLA_NUM_TILESETS, R"({"GUNS": "smguns.sti", "P4ITEMS": "smp4items.sti"})")));
+	auto const gun   = ItemOnTiles("OLD_GUN", GUNS);
+	auto const p4    = ItemOnTiles("NEW_P4", P4ITEMS);
+	auto const p5    = ItemOnTiles("NEW_P5", P5ITEMS);
+	auto const none  = [](uint8_t, ST::string const&) { return false; };
+	auto const all   = [](uint8_t, ST::string const&) { return true; };
+
+	// the older types are never checked, a new type without users needs no file
+	EXPECT_NO_THROW(CheckItemTileFiles({ gun.get(), nullptr }, tilesets, none));
+	// a new type used by an item: its file must be there
+	EXPECT_NO_THROW(CheckItemTileFiles({ gun.get(), p4.get() }, tilesets, all));
+	EXPECT_THROW(CheckItemTileFiles({ gun.get(), p4.get() }, tilesets, none), DataError);
+	// ... and named in tilesets.json
+	EXPECT_THROW(CheckItemTileFiles({ p5.get() }, tilesets, all), DataError);
+	// the file looked for is the default tileset's
+	ST::string looked;
+	CheckItemTileFiles({ p4.get() }, tilesets, [&](uint8_t const t, ST::string const& f) { looked = ST::format("{}/{}", t, f); return true; });
+	EXPECT_EQ(looked, "0/smp4items.sti");
 }
 #endif

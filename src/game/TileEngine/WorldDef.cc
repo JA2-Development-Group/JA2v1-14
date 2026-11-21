@@ -223,6 +223,14 @@ try
 		RenderProgressBar(0, percentage);
 
 		auto res = GetAdjustedTilesetResource(tileset_id, i);
+		// docs/tilesets-json-and-item-tile-types-plan.md, stage 2 (T7): a new item
+		// tile type without its file (no item uses it, CheckItemTileFiles) gets the
+		// P1ITEMS file as a stand-in, never shown
+		if (IsNewItemTileType(i) && !GCM->doesGameResExists(res.resourceFileName))
+		{
+			SLOGD("Tile type {}: no file `{}`, the P1ITEMS file stands in", gTileSurfaceName[i], res.resourceFileName);
+			res = GetAdjustedTilesetResource(tileset_id, P1ITEMS);
+		}
 		BOOLEAN fUseDefault = res.isDefaultTileset();
 
 		// don't load default surface if already loaded

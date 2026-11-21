@@ -12,6 +12,13 @@ constexpr UINT16 GUN_TILES    = 2000;
 constexpr UINT16 P1ITEM_TILES = 2000;
 constexpr UINT16 P2ITEM_TILES = 1000;
 constexpr UINT16 P3ITEM_TILES = 1000;
+// The item tile types for new items, docs/tilesets-json-and-item-tile-types-plan.md
+// stage 2 (T6): sm_new_guns.sti, sm_new_items.sti, smp4items.sti ... smp6items.sti
+constexpr UINT16 NEW_GUN_TILES  = 2000;
+constexpr UINT16 NEW_ITEM_TILES = 2000;
+constexpr UINT16 P4ITEM_TILES   = 1000;
+constexpr UINT16 P5ITEM_TILES   = 1000;
+constexpr UINT16 P6ITEM_TILES   = 1000;
 
 
 enum TileDefines
@@ -2661,6 +2668,23 @@ enum TileDefines
 	WIREFRAMES14,
 	WIREFRAMES15,
 
+	// docs/tilesets-json-and-item-tile-types-plan.md, stage 2 (T5): after every
+	// older tile, so no tile index moves
+	NEWGUN1,
+	NEWGUN_LAST = NEWGUN1 + NEW_GUN_TILES - 1,
+
+	NEWITEM1,
+	NEWITEM_LAST = NEWITEM1 + NEW_ITEM_TILES - 1,
+
+	P4ITEM1,
+	P4ITEM_LAST = P4ITEM1 + P4ITEM_TILES - 1,
+
+	P5ITEM1,
+	P5ITEM_LAST = P5ITEM1 + P5ITEM_TILES - 1,
+
+	P6ITEM1,
+	P6ITEM_LAST = P6ITEM1 + P6ITEM_TILES - 1,
+
 	NUMBEROFTILES
 };
 
@@ -2864,6 +2888,14 @@ enum TileTypeDefines
 
 	WIREFRAMES,
 
+	// Item tile types for new items, docs/tilesets-json-and-item-tile-types-plan.md stage 2
+	// (T5): at the end, as maps store tile type numbers
+	NEW_GUNS,
+	NEW_ITEMS,
+	P4ITEMS,
+	P5ITEMS,
+	P6ITEMS,
+
 	NUMBEROFTILETYPES
 };
 
@@ -2893,6 +2925,19 @@ enum TileTypeDefines
 #define LASTPOINTERS		(SELRING - 1)
 #define LASTUIELEM		(WIREFRAMES  - 1)		// Change this entry if adding new types to the end
 #define LASTTIELSETELEM		(GUNS - 1)
+
+// Tile types of items lying on the ground
+inline bool IsItemTileType(UINT32 const type)
+{
+	return (GUNS <= type && type <= P2ITEMS) || type == P3ITEMS || (NEW_GUNS <= type && type <= P6ITEMS);
+}
+
+// The item tile types of docs/tilesets-json-and-item-tile-types-plan.md, stage 2:
+// their file may be missing while no item uses them (T7)
+inline bool IsNewItemTileType(UINT32 const type)
+{
+	return NEW_GUNS <= type && type <= P6ITEMS;
+}
 
 
 // DEFINES FOR SPECIFIC SPECIAL TILE SLOTS
