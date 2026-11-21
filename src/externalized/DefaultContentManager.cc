@@ -444,6 +444,11 @@ static size_t HighestPriorityLayer(Vfs* const vfs, ST::string const& filename)
 	return best;
 }
 
+bool DefaultContentManager::itemTileFileExists(uint8_t const tileset, const ST::string& file) const
+{
+	return doesGameResExists(getTilesetResourceName(tileset, file));
+}
+
 ST::string DefaultContentManager::getPNGReplacement(const ST::string& filename) const
 {
 	// "image_png_override": false in ja2.json
@@ -1225,7 +1230,7 @@ bool DefaultContentManager::loadGameData(BinaryData const& binaryData)
 
 	// docs/tilesets-json-and-item-tile-types-plan.md, stage 2 (T7)
 	CheckItemTileFiles(m_items, m_tilesets, [this](uint8_t const tileset, ST::string const& file)
-		{ return doesGameResExists(getTilesetResourceName(tileset, file)); });
+		{ return itemTileFileExists(tileset, file); });
 
 	// docs/enemy-equipment-progress-plan.md, stage 1
 	for (ST::string const& warning : MissingLowEnemyTiers(m_items))

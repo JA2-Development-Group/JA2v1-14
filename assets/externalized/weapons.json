@@ -3251,11 +3251,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 101
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 1
             },
             "big": {
-                "path": "bigitems/gun1001.sti"
+                "path": "bigitems/gun1001.png"
             }
         },
         "ubWeight": 7,
@@ -3284,8 +3284,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 102
+            "type": "NEW_GUNS",
+            "subIndex": 1
         }
     },
 	{
@@ -3294,11 +3294,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 102
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 2
             },
             "big": {
-                "path": "bigitems/gun1002.sti"
+                "path": "bigitems/gun1002.png"
             }
         },
         "ubWeight": 6,
@@ -3327,8 +3327,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 103
+            "type": "NEW_GUNS",
+            "subIndex": 2
         }
     },
 	{
@@ -3337,11 +3337,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 103
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 3
             },
             "big": {
-                "path": "bigitems/gun1003.sti"
+                "path": "bigitems/gun1003.png"
             }
         },
         "ubWeight": 11,
@@ -3370,8 +3370,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 104
+            "type": "NEW_GUNS",
+            "subIndex": 3
         }
     },
 	{
@@ -3380,11 +3380,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 104
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 4
             },
             "big": {
-                "path": "bigitems/gun1004.sti"
+                "path": "bigitems/gun1004.png"
             }
         },
         "ubWeight": 11,
@@ -3413,8 +3413,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 105
+            "type": "NEW_GUNS",
+            "subIndex": 4
         }
     },
 		{
@@ -3423,11 +3423,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 105
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 5
             },
             "big": {
-                "path": "bigitems/gun1005.sti"
+                "path": "bigitems/gun1005.png"
             }
         },
         "ubWeight": 16,
@@ -3456,8 +3456,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 106
+            "type": "NEW_GUNS",
+            "subIndex": 5
         }
     },
 	{
@@ -3466,11 +3466,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 106
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 6
             },
             "big": {
-                "path": "bigitems/gun1006.sti"
+                "path": "bigitems/gun1006.png"
             }
         },
         "ubWeight": 10,
@@ -3499,8 +3499,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 107
+            "type": "NEW_GUNS",
+            "subIndex": 6
         }
     },
 	{
@@ -3509,11 +3509,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 107
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 7
             },
             "big": {
-                "path": "bigitems/gun1007.sti"
+                "path": "bigitems/gun1007.png"
             }
         },
         "ubWeight": 15,
@@ -3542,8 +3542,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 108
+            "type": "NEW_GUNS",
+            "subIndex": 7
         }
     },
 	{
@@ -3552,11 +3552,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 108
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 8
             },
             "big": {
-                "path": "bigitems/gun1008.sti"
+                "path": "bigitems/gun1008.png"
             }
         },
         "ubWeight": 17,
@@ -3585,8 +3585,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 109
+            "type": "NEW_GUNS",
+            "subIndex": 8
         }
     },
 	{
@@ -3595,11 +3595,11 @@
         "internalType": "PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 109
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 9
             },
             "big": {
-                "path": "bigitems/gun1009.sti"
+                "path": "bigitems/gun1009.png"
             }
         },
         "ubWeight": 17,
@@ -3628,8 +3628,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 110
+            "type": "NEW_GUNS",
+            "subIndex": 9
         }
     },
 	
@@ -3646,11 +3646,11 @@
         "internalType": "M_PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 201
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 101
             },
             "big": {
-                "path": "bigitems/gun1101.sti"
+                "path": "bigitems/gun1101.png"
             }
         },
         "ubWeight": 7,
@@ -3686,8 +3686,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 202
+            "type": "NEW_GUNS",
+            "subIndex": 101
         }
     },
 	{
@@ -3696,11 +3696,11 @@
         "internalType": "M_PISTOL",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 202
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 102
             },
             "big": {
-                "path": "bigitems/gun1102.sti"
+                "path": "bigitems/gun1102.png"
             }
         },
         "ubWeight": 10,
@@ -3736,8 +3736,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 203
+            "type": "NEW_GUNS",
+            "subIndex": 102
         }
     },
 	
@@ -3755,11 +3755,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 301
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 201
             },
             "big": {
-                "path": "bigitems/gun1201.sti"
+                "path": "bigitems/gun1201.png"
             }
         },
         "ubWeight": 15,
@@ -3795,8 +3795,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 302
+            "type": "NEW_GUNS",
+            "subIndex": 201
         }
     },
 	{
@@ -3805,11 +3805,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 302
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 202
             },
             "big": {
-                "path": "bigitems/gun1202.sti"
+                "path": "bigitems/gun1202.png"
             }
         },
         "ubWeight": 20,
@@ -3845,8 +3845,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 303
+            "type": "NEW_GUNS",
+            "subIndex": 202
         }
     },
 	{
@@ -3855,11 +3855,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 303
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 203
             },
             "big": {
-                "path": "bigitems/gun1203.sti"
+                "path": "bigitems/gun1203.png"
             }
         },
         "ubWeight": 25,
@@ -3895,8 +3895,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 304
+            "type": "NEW_GUNS",
+            "subIndex": 203
         }
     },
 	{
@@ -3905,11 +3905,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 304
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 204
             },
             "big": {
-                "path": "bigitems/gun1204.sti"
+                "path": "bigitems/gun1204.png"
             }
         },
         "ubWeight": 35,
@@ -3945,8 +3945,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 305
+            "type": "NEW_GUNS",
+            "subIndex": 204
         }
     },
 	{
@@ -3955,11 +3955,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 305
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 205
             },
             "big": {
-                "path": "bigitems/gun1205.sti"
+                "path": "bigitems/gun1205.png"
             }
         },
         "ubWeight": 23,
@@ -3995,8 +3995,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 306
+            "type": "NEW_GUNS",
+            "subIndex": 205
         }
     },
 	{
@@ -4005,11 +4005,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 306
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 206
             },
             "big": {
-                "path": "bigitems/gun1206.sti"
+                "path": "bigitems/gun1206.png"
             }
         },
         "ubWeight": 29,
@@ -4045,8 +4045,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 307
+            "type": "NEW_GUNS",
+            "subIndex": 206
         }
     },
 	{
@@ -4055,11 +4055,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 307
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 207
             },
             "big": {
-                "path": "bigitems/gun1207.sti"
+                "path": "bigitems/gun1207.png"
             }
         },
         "ubWeight": 24,
@@ -4095,8 +4095,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 308
+            "type": "NEW_GUNS",
+            "subIndex": 207
         }
     },
 	{
@@ -4105,11 +4105,11 @@
         "internalType": "SMG",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 308
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 208
             },
             "big": {
-                "path": "bigitems/gun1208.sti"
+                "path": "bigitems/gun1208.png"
             }
         },
         "ubWeight": 22,
@@ -4145,8 +4145,8 @@
         "bSinks": true,
         "bShowStatus": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 309
+            "type": "NEW_GUNS",
+            "subIndex": 208
         }
     },
 	
@@ -4163,11 +4163,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 501
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 401
             },
             "big": {
-                "path": "bigitems/gun1401.sti"
+                "path": "bigitems/gun1401.png"
             }
         },
         "ubWeight": 18,
@@ -4198,8 +4198,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 502
+            "type": "NEW_GUNS",
+            "subIndex": 401
         }
     },
 	{
@@ -4208,11 +4208,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 502
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 402
             },
             "big": {
-                "path": "bigitems/gun1402.sti"
+                "path": "bigitems/gun1402.png"
             }
         },
         "ubWeight": 42,
@@ -4243,8 +4243,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 503
+            "type": "NEW_GUNS",
+            "subIndex": 402
         }
     },
 	{
@@ -4253,11 +4253,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 503
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 403
             },
             "big": {
-                "path": "bigitems/gun1403.sti"
+                "path": "bigitems/gun1403.png"
             }
         },
         "ubWeight": 38,
@@ -4288,8 +4288,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 504
+            "type": "NEW_GUNS",
+            "subIndex": 403
         }
     },
 	{
@@ -4298,11 +4298,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 504
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 404
             },
             "big": {
-                "path": "bigitems/gun1404.sti"
+                "path": "bigitems/gun1404.png"
             }
         },
         "ubWeight": 44,
@@ -4333,8 +4333,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 505
+            "type": "NEW_GUNS",
+            "subIndex": 404
         }
     },
 	{
@@ -4343,11 +4343,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 505
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 405
             },
             "big": {
-                "path": "bigitems/gun1405.sti"
+                "path": "bigitems/gun1405.png"
             }
         },
         "ubWeight": 40,
@@ -4384,8 +4384,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 506
+            "type": "NEW_GUNS",
+            "subIndex": 405
         }
     },
 	{
@@ -4394,11 +4394,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 506
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 406
             },
             "big": {
-                "path": "bigitems/gun1406.sti"
+                "path": "bigitems/gun1406.png"
             }
         },
         "ubWeight": 65,
@@ -4435,8 +4435,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 507
+            "type": "NEW_GUNS",
+            "subIndex": 406
         }
     },
 	{
@@ -4445,11 +4445,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 507
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 407
             },
             "big": {
-                "path": "bigitems/gun1407.sti"
+                "path": "bigitems/gun1407.png"
             }
         },
         "ubWeight": 55,
@@ -4486,8 +4486,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 508
+            "type": "NEW_GUNS",
+            "subIndex": 407
         }
     },
 	{
@@ -4496,11 +4496,11 @@
         "internalType": "SHOTGUN",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdguns.sti",
-                "subImageIndex": 508
+                "path": "interface/md_new_guns.sti",
+                "subImageIndex": 408
             },
             "big": {
-                "path": "bigitems/gun1408.sti"
+                "path": "bigitems/gun1408.png"
             }
         },
         "ubWeight": 35,
@@ -4537,8 +4537,8 @@
         "bShowStatus": true,
         "bTwoHanded": true,
         "tileGraphic": {
-            "type": "GUNS",
-            "subIndex": 509
+            "type": "NEW_GUNS",
+            "subIndex": 408
         }
     }
 		

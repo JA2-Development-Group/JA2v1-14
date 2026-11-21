@@ -18,6 +18,12 @@ public:
 
 	bool loadGameData() override;
 
+protected:
+	/** The test data has no game pictures: the ground picture files of the new
+	    item tile types count as there (CheckItemTileFiles has its own tests). */
+	bool itemTileFileExists(uint8_t, const ST::string&) const override { return true; }
+
+public:
 	/** Sets the "image_png_override" engine option. */
 	void setImagePNGOverride(bool value);
 

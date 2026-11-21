@@ -1710,11 +1710,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 301
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 1
             },
             "big": {
-                "path": "bigitems/p1item3001.sti"
+                "path": "bigitems/new_item3001.png"
             }
         },
         "ubWeight": 1,
@@ -1727,8 +1727,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 302
+            "type": "NEW_ITEMS",
+            "subIndex": 1
         }
     },
 	{
@@ -1739,11 +1739,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 302
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 2
             },
             "big": {
-                "path": "bigitems/p1item3002.sti"
+                "path": "bigitems/new_item3002.png"
             }
         },
         "ubWeight": 2,
@@ -1756,8 +1756,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 303
+            "type": "NEW_ITEMS",
+            "subIndex": 2
         }
     },
     {
@@ -1768,11 +1768,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 303
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 3
             },
             "big": {
-                "path": "bigitems/p1item3003.sti"
+                "path": "bigitems/new_item3003.png"
             }
         },
         "ubWeight": 4,
@@ -1785,8 +1785,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 304
+            "type": "NEW_ITEMS",
+            "subIndex": 3
         }
     },
 		{
@@ -1797,11 +1797,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 304
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 4
             },
             "big": {
-                "path": "bigitems/p1item3004.sti"
+                "path": "bigitems/new_item3004.png"
             }
         },
         "ubWeight": 2,
@@ -1814,8 +1814,8 @@
 		"bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 305
+            "type": "NEW_ITEMS",
+            "subIndex": 4
         }
     },
 	{
@@ -1826,11 +1826,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 305
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 5
             },
             "big": {
-                "path": "bigitems/p1item3005.sti"
+                "path": "bigitems/new_item3005.png"
             }
         },
         "ubWeight": 2,
@@ -1843,8 +1843,8 @@
 		"bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 306
+            "type": "NEW_ITEMS",
+            "subIndex": 5
         }
     },
 	{
@@ -1855,11 +1855,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 306
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 6
             },
             "big": {
-                "path": "bigitems/p1item3006.sti"
+                "path": "bigitems/new_item3006.png"
             }
         },
         "ubWeight": 2,
@@ -1872,8 +1872,8 @@
 		"bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 307
+            "type": "NEW_ITEMS",
+            "subIndex": 6
         }
     },
 	{
@@ -1884,11 +1884,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 307
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 7
             },
             "big": {
-                "path": "bigitems/p1item3007.sti"
+                "path": "bigitems/new_item3007.png"
             }
         },
         "ubWeight": 10,
@@ -1901,8 +1901,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 308
+            "type": "NEW_ITEMS",
+            "subIndex": 7
         }
     },
 	{
@@ -1913,11 +1913,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 308
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 8
             },
             "big": {
-                "path": "bigitems/p1item3008.sti"
+                "path": "bigitems/new_item3008.png"
             }
         },
         "ubWeight": 1,
@@ -1930,8 +1930,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 309
+            "type": "NEW_ITEMS",
+            "subIndex": 8
         }
     },
     {
@@ -1942,11 +1942,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 309
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 9
             },
             "big": {
-                "path": "bigitems/p1item3009.sti"
+                "path": "bigitems/new_item3009.png"
             }
         },
         "ubWeight": 2,
@@ -1959,8 +1959,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 310
+            "type": "NEW_ITEMS",
+            "subIndex": 9
         }
     },
 	{
@@ -1971,11 +1971,11 @@
         "ammoType": "AMMO_REGULAR",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 310
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 10
             },
             "big": {
-                "path": "bigitems/p1item3010.sti"
+                "path": "bigitems/new_item3010.png"
             }
         },
         "ubWeight": 1,
@@ -1988,8 +1988,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 311
+            "type": "NEW_ITEMS",
+            "subIndex": 10
         }
     },
 	{
@@ -2000,11 +2000,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 311
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 11
             },
             "big": {
-                "path": "bigitems/p1item3011.sti"
+                "path": "bigitems/new_item3011.png"
             }
         },
         "ubWeight": 1,
@@ -2017,8 +2017,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 312
+            "type": "NEW_ITEMS",
+            "subIndex": 11
         }
     },
 	{
@@ -2029,11 +2029,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 312
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 12
             },
             "big": {
-                "path": "bigitems/p1item3012.sti"
+                "path": "bigitems/new_item3012.png"
             }
         },
         "ubWeight": 1,
@@ -2046,8 +2046,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 313
+            "type": "NEW_ITEMS",
+            "subIndex": 12
         }
     },
 	{
@@ -2058,11 +2058,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 313
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 13
             },
             "big": {
-                "path": "bigitems/p1item3013.sti"
+                "path": "bigitems/new_item3013.png"
             }
         },
         "ubWeight": 1,
@@ -2075,8 +2075,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 314
+            "type": "NEW_ITEMS",
+            "subIndex": 13
         }
     },
 	{
@@ -2087,11 +2087,11 @@
         "ammoType": "AMMO_REGULAR",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 314
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 14
             },
             "big": {
-                "path": "bigitems/p1item3014.sti"
+                "path": "bigitems/new_item3014.png"
             }
         },
         "ubWeight": 2,
@@ -2104,8 +2104,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 315
+            "type": "NEW_ITEMS",
+            "subIndex": 14
         }
     },
 	{
@@ -2116,11 +2116,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 315
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 15
             },
             "big": {
-                "path": "bigitems/p1item3015.sti"
+                "path": "bigitems/new_item3015.png"
             }
         },
         "ubWeight": 2,
@@ -2133,8 +2133,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 316
+            "type": "NEW_ITEMS",
+            "subIndex": 15
         }
     },
 	{
@@ -2145,11 +2145,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 316
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 16
             },
             "big": {
-                "path": "bigitems/p1item3016.sti"
+                "path": "bigitems/new_item3016.png"
             }
         },
         "ubWeight": 2,
@@ -2162,8 +2162,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 317
+            "type": "NEW_ITEMS",
+            "subIndex": 16
         }
     },
 	{
@@ -2174,11 +2174,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 317
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 17
             },
             "big": {
-                "path": "bigitems/p1item3017.sti"
+                "path": "bigitems/new_item3017.png"
             }
         },
         "ubWeight": 2,
@@ -2191,8 +2191,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 318
+            "type": "NEW_ITEMS",
+            "subIndex": 17
         }
     },
 	{
@@ -2203,11 +2203,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 318
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 18
             },
             "big": {
-                "path": "bigitems/p1item3018.sti"
+                "path": "bigitems/new_item3018.png"
             }
         },
         "ubWeight": 2,
@@ -2220,8 +2220,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 319
+            "type": "NEW_ITEMS",
+            "subIndex": 18
         }
     },
 	{
@@ -2232,11 +2232,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 319
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 19
             },
             "big": {
-                "path": "bigitems/p1item3019.sti"
+                "path": "bigitems/new_item3019.png"
             }
         },
         "ubWeight": 2,
@@ -2249,8 +2249,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 320
+            "type": "NEW_ITEMS",
+            "subIndex": 19
         }
     },
 	{
@@ -2261,11 +2261,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 320
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 20
             },
             "big": {
-                "path": "bigitems/p1item3020.sti"
+                "path": "bigitems/new_item3020.png"
             }
         },
         "ubWeight": 2,
@@ -2278,8 +2278,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 321
+            "type": "NEW_ITEMS",
+            "subIndex": 20
         }
     },
 	{
@@ -2290,11 +2290,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 321
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 21
             },
             "big": {
-                "path": "bigitems/p1item3021.sti"
+                "path": "bigitems/new_item3021.png"
             }
         },
         "ubWeight": 2,
@@ -2307,8 +2307,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 322
+            "type": "NEW_ITEMS",
+            "subIndex": 21
         }
     },
     {
@@ -2319,11 +2319,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 322
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 22
             },
             "big": {
-                "path": "bigitems/p1item3022.sti"
+                "path": "bigitems/new_item3022.png"
             }
         },
         "ubWeight": 10,
@@ -2336,8 +2336,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 323
+            "type": "NEW_ITEMS",
+            "subIndex": 22
         }
     },
 	{
@@ -2348,11 +2348,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 323
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 23
             },
             "big": {
-                "path": "bigitems/p1item3023.sti"
+                "path": "bigitems/new_item3023.png"
             }
         },
         "ubWeight": 7,
@@ -2365,8 +2365,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 324
+            "type": "NEW_ITEMS",
+            "subIndex": 23
         }
     },
 	{
@@ -2377,11 +2377,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 324
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 24
             },
             "big": {
-                "path": "bigitems/p1item3024.sti"
+                "path": "bigitems/new_item3024.png"
             }
         },
         "ubWeight": 7,
@@ -2394,8 +2394,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 325
+            "type": "NEW_ITEMS",
+            "subIndex": 24
         }
     },
 	{
@@ -2406,11 +2406,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 325
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 25
             },
             "big": {
-                "path": "bigitems/p1item3025.sti"
+                "path": "bigitems/new_item3025.png"
             }
         },
         "ubWeight": 7,
@@ -2423,8 +2423,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 326
+            "type": "NEW_ITEMS",
+            "subIndex": 25
         }
     },
 	{
@@ -2435,11 +2435,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 326
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 26
             },
             "big": {
-                "path": "bigitems/p1item3026.sti"
+                "path": "bigitems/new_item3026.png"
             }
         },
         "ubWeight": 1,
@@ -2452,8 +2452,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 327
+            "type": "NEW_ITEMS",
+            "subIndex": 26
         }
     },
 	{
@@ -2464,11 +2464,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 327
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 27
             },
             "big": {
-                "path": "bigitems/p1item3027.sti"
+                "path": "bigitems/new_item3027.png"
             }
         },
         "ubWeight": 1,
@@ -2481,8 +2481,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 328
+            "type": "NEW_ITEMS",
+            "subIndex": 27
         }
     },
 	{
@@ -2493,11 +2493,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 328
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 28
             },
             "big": {
-                "path": "bigitems/p1item3028.sti"
+                "path": "bigitems/new_item3028.png"
             }
         },
         "ubWeight": 1,
@@ -2510,8 +2510,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 329
+            "type": "NEW_ITEMS",
+            "subIndex": 28
         }
     },
 	{
@@ -2522,11 +2522,11 @@
         "ammoType": "AMMO_HP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 329
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 29
             },
             "big": {
-                "path": "bigitems/p1item3029.sti"
+                "path": "bigitems/new_item3029.png"
             }
         },
         "ubWeight": 3,
@@ -2539,8 +2539,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 330
+            "type": "NEW_ITEMS",
+            "subIndex": 29
         }
     },
 	{
@@ -2551,11 +2551,11 @@
         "ammoType": "AMMO_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 330
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 30
             },
             "big": {
-                "path": "bigitems/p1item3030.sti"
+                "path": "bigitems/new_item3030.png"
             }
         },
         "ubWeight": 3,
@@ -2568,8 +2568,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 331
+            "type": "NEW_ITEMS",
+            "subIndex": 30
         }
     },
 	{
@@ -2580,11 +2580,11 @@
         "ammoType": "AMMO_SUPER_AP",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 331
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 31
             },
             "big": {
-                "path": "bigitems/p1item3031.sti"
+                "path": "bigitems/new_item3031.png"
             }
         },
         "ubWeight": 3,
@@ -2597,8 +2597,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 332
+            "type": "NEW_ITEMS",
+            "subIndex": 31
         }
     },
 	{
@@ -2609,11 +2609,11 @@
         "ammoType": "AMMO_BUCKSHOT",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 332
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 32
             },
             "big": {
-                "path": "bigitems/p1item3032.sti"
+                "path": "bigitems/new_item3032.png"
             }
         },
         "ubWeight": 2,
@@ -2626,8 +2626,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 333
+            "type": "NEW_ITEMS",
+            "subIndex": 32
         }
     },
 	{
@@ -2638,11 +2638,11 @@
         "ammoType": "AMMO_FLECHETTE",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 333
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 33
             },
             "big": {
-                "path": "bigitems/p1item3033.sti"
+                "path": "bigitems/new_item3033.png"
             }
         },
         "ubWeight": 2,
@@ -2655,8 +2655,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 334
+            "type": "NEW_ITEMS",
+            "subIndex": 33
         }
     },
 	{
@@ -2667,11 +2667,11 @@
         "ammoType": "AMMO_BUCKSHOT",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 334
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 34
             },
             "big": {
-                "path": "bigitems/p1item3034.sti"
+                "path": "bigitems/new_item3034.png"
             }
         },
         "ubWeight": 10,
@@ -2684,8 +2684,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 335
+            "type": "NEW_ITEMS",
+            "subIndex": 34
         }
     },
 	{
@@ -2696,11 +2696,11 @@
         "ammoType": "AMMO_FLECHETTE",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 335
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 35
             },
             "big": {
-                "path": "bigitems/p1item3035.sti"
+                "path": "bigitems/new_item3035.png"
             }
         },
         "ubWeight": 10,
@@ -2713,8 +2713,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 336
+            "type": "NEW_ITEMS",
+            "subIndex": 35
         }
     },
 	{
@@ -2725,11 +2725,11 @@
         "ammoType": "AMMO_BUCKSHOT",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 336
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 36
             },
             "big": {
-                "path": "bigitems/p1item3036.sti"
+                "path": "bigitems/new_item3036.png"
             }
         },
         "ubWeight": 16,
@@ -2742,8 +2742,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 337
+            "type": "NEW_ITEMS",
+            "subIndex": 36
         }
     },
 	{
@@ -2754,11 +2754,11 @@
         "ammoType": "AMMO_FLECHETTE",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 337
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 37
             },
             "big": {
-                "path": "bigitems/p1item3037.sti"
+                "path": "bigitems/new_item3037.png"
             }
         },
         "ubWeight": 16,
@@ -2771,8 +2771,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 338
+            "type": "NEW_ITEMS",
+            "subIndex": 37
         }
     },
 	{
@@ -2783,11 +2783,11 @@
         "ammoType": "AMMO_BUCKSHOT",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 338
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 38
             },
             "big": {
-                "path": "bigitems/p1item3038.sti"
+                "path": "bigitems/new_item3038.png"
             }
         },
         "ubWeight": 24,
@@ -2800,8 +2800,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 339
+            "type": "NEW_ITEMS",
+            "subIndex": 38
         }
     },
 	{
@@ -2812,11 +2812,11 @@
         "ammoType": "AMMO_FLECHETTE",
         "inventoryGraphics": {
             "small": {
-                "path": "interface/mdp1items.sti",
-                "subImageIndex": 339
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 39
             },
             "big": {
-                "path": "bigitems/p1item3039.sti"
+                "path": "bigitems/new_item3039.png"
             }
         },
         "ubWeight": 24,
@@ -2829,8 +2829,8 @@
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
-            "type": "P1ITEMS",
-            "subIndex": 340
+            "type": "NEW_ITEMS",
+            "subIndex": 39
         }
     }
 	

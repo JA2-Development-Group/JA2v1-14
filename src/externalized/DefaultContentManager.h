@@ -218,6 +218,11 @@ public:
 	IEDT::uptr openEDT(std::string_view filename, IEDT::column_list columns) const override;
 
 protected:
+	// Whether the ground picture file of a new item tile type is there
+	// (CheckItemTileFiles at start, docs/tilesets-json-and-item-tile-types-plan.md, T7).
+	// The unit tests' content manager has no game pictures and says yes.
+	virtual bool itemTileFileExists(uint8_t tileset, const ST::string& file) const;
+
 	RustPointer<EngineOptions> m_engineOptions;
 	RustPointer<ModManager> m_modManager;
 	RustPointer<SchemaManager> m_schemaManager;
