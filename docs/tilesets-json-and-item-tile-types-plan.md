@@ -1,13 +1,14 @@
 # Tilesets in JSON and new item tile types - plan
 
 Status: plan written 2026-11-21, decisions T1-T8 decided 2026-11-21 (all A, as
-recommended). Implemented on the Weapons branch. Tilesets in JSON and new item tile
-types COMPLETE (2026-11-21).
+recommended), T9 added and decided 2026-11-21 (A). Implemented on the Weapons branch.
+Tilesets in JSON and new item tile types COMPLETE (2026-11-21).
 
 | Stage | Commit | State |
 |---|---|---|
 | 1 - tilesets from JSON | 4f434ede9 | game-verified |
-| 2 - new item tile types | this commit | game-verified |
+| 2 - new item tile types | a0d9eeca7 | game-verified |
+| 3 - subIndex from 0 for the new types (T9) | the commit after a0d9eeca7 | game-verified (USP9 ... DESERTEAGLE_50AE on NEW_GUNS) |
 
 New items should get picture files of their own, sorted by kind:
 
@@ -24,8 +25,13 @@ Example item data:
     "small": { "path": "interface/mdp4items.sti", "subImageIndex": 0 },
     "big":   { "path": "bigitems/p4item0.sti" }
 },
-"tileGraphic": { "type": "P4ITEMS", "subIndex": 1 }
+"tileGraphic": { "type": "P4ITEMS", "subIndex": 0 }
 ```
+
+For the new types both numbers count from 0, so the same number names the same
+picture in the `MD` and the `SM` file (T9). The original types keep
+`tileGraphic.subIndex` counted from 1 (`GUNS` 1 = the first picture of
+`SMGUNS.STI` = `subImageIndex` 0 of `MDGUNS.STI`).
 
 ## 1. Current state (code facts)
 
@@ -164,8 +170,14 @@ Example item data:
   in the JSON: `sm_new_guns.sti`, `sm_new_items.sti`, `smp4items.sti`,
   `smp5items.sti`, `smp6items.sti` (file names are not case sensitive). (B) other
   names.
+- **T9 - counting of `tileGraphic.subIndex` for the new types** (added after stage
+  2). (A, recommended, decided) from 0, like `inventoryGraphics.*.subImageIndex`:
+  `ItemTileSubIndex` (`TileDat.h`) adds 1 for `IsNewItemTileType` before
+  `GetTileGraphicForItem` takes the tile; the original types keep counting from 1,
+  no data changes (no item used the new types yet). (B) from 1 for every type, as
+  in stage 2.
 
-## 4. Stages (after T1-T8)
+## 4. Stages (after T1-T9)
 
 ### Stage 1 - tilesets from JSON
 
@@ -216,3 +228,16 @@ readable names, `namesArray`, schema enum; `IsItemTileType` (object layer flag) 
 - Game test: one test item per new type with pictures in `MD*.STI` and `SM*.STI`:
   inventory picture, item on the ground, picked up and dropped again, sector
   inventory, a saved game (new game, project rule).
+
+### Stage 3 - subIndex from 0 for the new types (T9)
+
+- `ItemTileSubIndex(type, subIndex)` (`TileDat.h`): `subIndex + 1` for the new item
+  tile types, `subIndex` for the others; `GetTileGraphicForItem`
+  (`Interface_Items.cc`) uses it, the only place that turns an item's
+  `tileGraphic` into a tile (ground, drop, throw, cursor). The warning for a number
+  beyond the file names the counting.
+- Schema `types/tileset-tile-index.schema.yaml`: `subIndex` description.
+- Unit test `InterfaceItems.itemTileSubIndex`.
+- Game test: an item with `"type": "NEW_GUNS", "subIndex": 0` shows the first
+  picture of `SM_NEW_GUNS.STI` on the ground, the same picture as
+  `"subImageIndex": 0` of `MD_NEW_GUNS.STI`; an original item (`GUNS`) unchanged.

@@ -6936,10 +6936,10 @@ std::pair<const SGPVObject*, UINT16> GetSmallInventoryGraphicForItem(const ItemM
 // the frames its tile type has loaded (frames - 0 means unknown, no check)
 // becomes the type's first picture, not a tile of the next type
 // (docs/item-graphic-frame-limits-plan.md, D4).
-UINT16 ItemGroundSubIndex(UINT16 const sub_index, UINT32 const loaded_frames)
+UINT16 ItemGroundSubIndex(UINT32 const sub_index, UINT32 const loaded_frames)
 {
-	if (loaded_frames == 0) return sub_index;
-	return sub_index >= 1 && sub_index <= loaded_frames ? sub_index : 1;
+	if (loaded_frames == 0) return static_cast<UINT16>(sub_index);
+	return sub_index >= 1 && sub_index <= loaded_frames ? static_cast<UINT16>(sub_index) : 1;
 }
 
 UINT16 GetTileGraphicForItem(const ItemModel * item)
@@ -6954,15 +6954,17 @@ UINT16 GetTileGraphicForItem(const ItemModel * item)
 		loaded = std::min<UINT32>(gTileSurfaceArray[type]->vo->SubregionCount(), gNumTilesPerType[type]);
 	}
 
-	UINT16 const sub_index = ItemGroundSubIndex(tile.subIndex, loaded);
-	if (sub_index != tile.subIndex)
+	// the new item tile types count subIndex from 0 (ItemTileSubIndex)
+	UINT32 const wanted    = ItemTileSubIndex(type, tile.subIndex);
+	UINT16 const sub_index = ItemGroundSubIndex(wanted, loaded);
+	if (sub_index != wanted)
 	{
 		// once per item
 		static std::set<UINT16> warned;
 		if (warned.insert(item->getItemIndex()).second)
 		{
-			SLOGW("Item `{}`: ground picture subIndex {} is beyond the {} pictures of tile type {}, using picture 1",
-				item->getInternalName(), tile.subIndex, loaded, type);
+			SLOGW("Item `{}`: ground picture subIndex {} (counted from {}) is beyond the {} pictures of tile type {}, using the first picture",
+				item->getInternalName(), tile.subIndex, IsNewItemTileType(type) ? 0 : 1, loaded, type);
 		}
 	}
 	return GetTileIndexFromTypeSubIndex(type, sub_index);
@@ -8336,5 +8338,25 @@ TEST(InterfaceItems, itemGroundSubIndex)
 	EXPECT_EQ(ItemGroundSubIndex(0,   102), 1);
 	// the type's file not loaded: no check
 	EXPECT_EQ(ItemGroundSubIndex(150, 0), 150);
+}
+
+// docs/tilesets-json-and-item-tile-types-plan.md, T9: the new item tile types
+// count tileGraphic.subIndex from 0 like subImageIndex, the older ones from 1
+TEST(InterfaceItems, itemTileSubIndex)
+{
+	EXPECT_EQ(ItemTileSubIndex(GUNS,    1), 1u);
+	EXPECT_EQ(ItemTileSubIndex(P1ITEMS, 1), 1u);
+	EXPECT_EQ(ItemTileSubIndex(P3ITEMS, 5), 5u);
+	for (UINT32 const type : { NEW_GUNS, NEW_ITEMS, P4ITEMS, P5ITEMS, P6ITEMS })
+	{
+		EXPECT_EQ(ItemTileSubIndex(type, 0), 1u);   // the first picture
+		EXPECT_EQ(ItemTileSubIndex(type, 1), 2u);
+	}
+	EXPECT_EQ(ItemTileSubIndex(NEW_GUNS, 65535), 65536u); // no wrap to 0
+	// a new type's subIndex 0 is the first picture, the last one counts too
+	EXPECT_EQ(ItemGroundSubIndex(ItemTileSubIndex(NEW_GUNS, 0),   509), 1);
+	EXPECT_EQ(ItemGroundSubIndex(ItemTileSubIndex(NEW_GUNS, 508), 509), 509);
+	EXPECT_EQ(ItemGroundSubIndex(ItemTileSubIndex(NEW_GUNS, 509), 509), 1);
+	EXPECT_EQ(ItemGroundSubIndex(ItemTileSubIndex(NEW_GUNS, 65535), 509), 1);
 }
 #endif

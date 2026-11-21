@@ -165,7 +165,11 @@ properties:
       - P6ITEMS
   subIndex:
     title: Subindex
-    description: The index of the image within the tile type
+    description: |
+      The index of the image within the tile type. Counted from 1 for the original types
+      (GUNS, P1ITEMS, P2ITEMS, P3ITEMS ...), from 0 for the item tile types for new items
+      (NEW_GUNS, NEW_ITEMS, P4ITEMS, P5ITEMS, P6ITEMS), like `subImageIndex` of the
+      inventory pictures (docs/tilesets-json-and-item-tile-types-plan.md, T9).
     $ref: types/uint16.schema.yaml
 required:
   - type

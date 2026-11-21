@@ -2939,6 +2939,15 @@ inline bool IsNewItemTileType(UINT32 const type)
 	return NEW_GUNS <= type && type <= P6ITEMS;
 }
 
+// The 1-based tile subindex of an item's tileGraphic.subIndex: the new item tile
+// types count it from 0 like the inventory pictures (subImageIndex), so the same
+// number names the same picture in MD_NEW_GUNS.STI and SM_NEW_GUNS.STI; the older
+// types count it from 1 (docs/tilesets-json-and-item-tile-types-plan.md, T9)
+inline UINT32 ItemTileSubIndex(UINT32 const type, UINT16 const data_sub_index)
+{
+	return IsNewItemTileType(type) ? data_sub_index + 1u : data_sub_index;
+}
+
 
 // DEFINES FOR SPECIFIC SPECIAL TILE SLOTS
 #define WALL_AFRAME_START	31
