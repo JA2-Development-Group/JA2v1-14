@@ -1,0 +1,43 @@
+$schema: http://json-schema.org/schema#
+type: array
+title: Tilesets
+description: |
+  The tilesets of the maps (docs/tilesets-json-and-item-tile-types-plan.md), exported once
+  from the original `BinaryData/ja2set.dat` by `tools/export_tilesets.py`.
+
+  **Limitations**: 50 tilesets (vanilla) or 70 (Unfinished Business), with the indices
+  0..n-1 in order. Tile type names are checked by the game when it loads the file.
+minItems: 50
+maxItems: 70
+items:
+  title: Tileset
+  type: object
+  properties:
+    index:
+      title: Index
+      description: The tileset number; its files are in `Tilesets/<index>/`. 0..n-1 in order.
+      $ref: types/uint8.schema.yaml
+    name:
+      title: Name
+      description: The name of the tileset, shown by the map editor.
+      type: string
+      minLength: 1
+    ambientId:
+      title: Ambient sound
+      description: The sector ambience sound set of the tileset.
+      $ref: types/uint8.schema.yaml
+    files:
+      title: Files
+      description: |
+        Tile type name -> picture file of this tileset. A tile type left out uses the
+        file of tileset 0 (GENERIC 1).
+      type: object
+      additionalProperties:
+        type: string
+        minLength: 1
+  required:
+    - index
+    - name
+    - ambientId
+    - files
+  additionalProperties: false

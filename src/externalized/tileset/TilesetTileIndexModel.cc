@@ -186,6 +186,16 @@ ST::string serializeTileTypeDefine(TileTypeDefines tt)
 }
 }
 
+TileTypeDefines TileTypeFromName(ST::string const& name)
+{
+	return deserializeTileTypeDefine(name);
+}
+
+ST::string TileTypeName(TileTypeDefines const type)
+{
+	return serializeTileTypeDefine(type);
+}
+
 TilesetTileIndexModel TilesetTileIndexModel::deserialize(const JsonValue &json) {
 	auto obj = json.toObject();
 	return TilesetTileIndexModel(

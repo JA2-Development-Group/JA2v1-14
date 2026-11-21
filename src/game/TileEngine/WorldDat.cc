@@ -1,10 +1,10 @@
 #include "WorldDat.h"
 #include "TileDef.h"
-#include "Sys_Globals.h"
 #include "Tile_Surface.h"
 
 #include "ContentManager.h"
 #include "GameInstance.h"
+#include "TilesetModel.h"
 
 #include <string_theory/format>
 
@@ -20,52 +20,23 @@ static void SetTilesetThreeTerrainValues(void);
 static void SetTilesetTwoTerrainValues(void);
 
 
+// The tilesets come from tilesets.json (docs/tilesets-json-and-item-tile-types-plan.md),
+// checked when the game data is loaded: 50 (vanilla) or 70 (Unfinished Business)
+// tilesets, indices 0..n-1, known tile type names.
 void InitEngineTilesets(void)
-try
 {
-	AutoSGPFile f(GCM->openGameResForReading(GCM->getTilesetDBResName()));
+	auto const& tilesets = GCM->getTilesets();
+	gubNumTilesets = static_cast<UINT8>(tilesets.size());
+	if (gubNumTilesets == JA25_NUM_TILESETS) SLOGI("Loading tilesets for Unfinished Business");
+	else                                     SLOGD("Loading vanilla tilesets");
 
-	// READ # TILESETS and compare
-	f->read(&gubNumTilesets, sizeof(gubNumTilesets));
-	switch (gubNumTilesets)
+	for (TilesetModel const& t : tilesets)
 	{
-	case VANILLA_NUM_TILESETS:
-		SLOGD("Loading vanilla tilesets");
-		break;
-	case JA25_NUM_TILESETS:
-		SLOGI("Loading tilesets for Unfinished Business");
-		break;
-	default:
-		SET_ERROR("Number of tilesets in code does not match data file");
-		return;
-	}
-
-	// READ #files
-	UINT32 uiNumFiles;
-	f->read(&uiNumFiles, sizeof(uiNumFiles));
-	if (uiNumFiles != NUMBEROFTILETYPES)
-	{
-		SET_ERROR("Number of tilesets slots in code does not match data file");
-		return;
-	}
-
-	// Loop through each tileset, load name then files
-	for (UINT8 i = 0; i < gubNumTilesets; i++)
-	{
-		TILESET& ts = gTilesets[i];
-		//Read name
-		ts.zName = f->readString(TILESET_NAME_LENGTH);
-
-		// Read ambience value
-		f->read(&(ts.ubAmbientID), sizeof(UINT8));
-
-		// Loop for files
-		for (UINT32 cnt2 = 0; cnt2 < uiNumFiles; ++cnt2)
-		{
-			// Read file name
-			ts.zTileSurfaceFilenames[cnt2] = f->readString(TILE_SURFACE_FILENAME_LENGTH);
-		}
-
+		TILESET& ts = gTilesets[t.index];
+		ts.zName       = t.name;
+		ts.ubAmbientID = t.ambientId;
+		for (ST::string& file : ts.zTileSurfaceFilenames) file.clear();
+		for (auto const& [type, file] : t.files) ts.zTileSurfaceFilenames[type] = file;
 		ts.MovementCostFnc = SetTilesetOneTerrainValues;
 	}
 
@@ -82,10 +53,6 @@ try
 	gTilesets[TEMP_29      ].MovementCostFnc = SetTilesetThreeTerrainValues;
 	gTilesets[TROPICAL_1   ].MovementCostFnc = SetTilesetFourTerrainValues;
 	gTilesets[TEMP_20      ].MovementCostFnc = SetTilesetFourTerrainValues;
-}
-catch (...)
-{
-	SET_ERROR("Failed to load tileset data file");
 }
 
 
@@ -204,3 +171,34 @@ static void SetTilesetFourTerrainValues(void)
 		// NOW ANY TERRAIN MODIFYING DEBRIS
 
 }
+
+
+#ifdef WITH_UNITTESTS
+#include "gtest/gtest.h"
+#include "DefaultContentManagerUT.h"
+#include "WorldDef.h"
+
+// docs/tilesets-json-and-item-tile-types-plan.md, stage 1: the tilesets from
+// tilesets.json; a tile type a tileset has no file for uses the file of tileset 0
+class WorldDatTest : public DefaultContentManagerUT::BaseTest {};
+
+TEST_F(WorldDatTest, tilesetsFromJson)
+{
+	InitEngineTilesets();
+	EXPECT_EQ(gubNumTilesets, VANILLA_NUM_TILESETS);
+	EXPECT_EQ(gTilesets[GENERIC_1].zName, "GENERIC 1");
+	EXPECT_EQ(gTilesets[GENERIC_1].zTileSurfaceFilenames[GUNS], "smguns.sti");
+	EXPECT_EQ(gTilesets[CAVES_1].zName, "CAVES 1");
+	EXPECT_EQ(gTilesets[CAVES_1].zTileSurfaceFilenames[FIRSTTEXTURE], "cvflr4.sti");
+	EXPECT_TRUE(gTilesets[CAVES_1].zTileSurfaceFilenames[GUNS].empty());
+	EXPECT_NE(gTilesets[CAVES_1].MovementCostFnc, gTilesets[GENERIC_1].MovementCostFnc); // its own terrain costs
+
+	auto own = GetAdjustedTilesetResource(CAVES_1, FIRSTTEXTURE);
+	EXPECT_EQ(own.tilesetID, CAVES_1);
+	EXPECT_EQ(own.resourceFileName, GCM->getTilesetResourceName(CAVES_1, "cvflr4.sti"));
+
+	auto fallback = GetAdjustedTilesetResource(CAVES_1, GUNS);
+	EXPECT_EQ(fallback.tilesetID, GENERIC_1);
+	EXPECT_EQ(fallback.resourceFileName, GCM->getTilesetResourceName(GENERIC_1, "smguns.sti"));
+}
+#endif

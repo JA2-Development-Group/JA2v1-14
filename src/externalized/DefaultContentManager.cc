@@ -17,6 +17,7 @@
 #include "ContentMusic.h"
 #include "Item_Types.h"
 #include "SmokeEffectModel.h"
+#include "TilesetModel.h"
 #include "ExplosionAnimationModel.h"
 #include "ExplosiveModel.h"
 #include "DealerInventory.h"
@@ -339,10 +340,10 @@ ST::string DefaultContentManager::getTilesetResourceName(int number, const ST::s
 }
 
 
-/** Get tileset db resource name. */
-ST::string DefaultContentManager::getTilesetDBResName() const
+/** The tilesets of tilesets.json (docs/tilesets-json-and-item-tile-types-plan.md). */
+const std::vector<TilesetModel>& DefaultContentManager::getTilesets() const
 {
-	return BINARYDATADIR "/ja2set.dat";
+	return m_tilesets;
 }
 
 /** Open map for reading. */
@@ -741,6 +742,13 @@ INT32 DefaultContentManager::getMaxArmourPerClass(uint16_t armourClass) const {
 		return 0;
 	}
 	return m_maxArmourPerClass.at(armourClass);
+}
+
+// docs/tilesets-json-and-item-tile-types-plan.md, stage 1: replaces BinaryData/ja2set.dat
+bool DefaultContentManager::loadTilesets()
+{
+	m_tilesets = TilesetModel::deserializeAll(readJsonDataFileWithSchema("tilesets.json"));
+	return true;
 }
 
 bool DefaultContentManager::loadSmokeEffects()
@@ -1207,7 +1215,8 @@ bool DefaultContentManager::loadGameData(BinaryData const& binaryData)
 		&& loadArmours(binaryData)
 		&& loadWeaponAttachmentFamilies()
 		&& loadArmyData()
-		&& loadMusic();
+		&& loadMusic()
+		&& loadTilesets();
 
 	fillUnusedItemIndices();
 

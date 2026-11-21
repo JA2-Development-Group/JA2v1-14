@@ -13,6 +13,7 @@
 #include "ItemStrings.h"
 #include "Json.h"
 #include "StringEncodingTypes.h"
+#include "TilesetModel.h"
 #include "Types.h"
 
 #include <cstdint>
@@ -59,8 +60,8 @@ public:
 	/** Get tileset resource name. */
 	virtual ST::string getTilesetResourceName(int number, const ST::string& fileName) const override;
 
-	/** Get tileset db resource name. */
-	virtual ST::string getTilesetDBResName() const override;
+	/** The tilesets of tilesets.json (docs/tilesets-json-and-item-tile-types-plan.md). */
+	virtual const std::vector<TilesetModel>& getTilesets() const override;
 
 	/** Open map for reading. */
 	virtual SGPFile* openMapForReading(const ST::string& mapName) const override;
@@ -259,6 +260,7 @@ protected:
 	std::multimap<MusicMode, const ST::string> m_musicMap;
 
 	std::vector<const SmokeEffectModel*> m_smokeEffects;
+	std::vector<TilesetModel> m_tilesets;
 	std::vector<const ExplosionAnimationModel*> m_explosionAnimations;
 	std::vector<const ExplosiveCalibreModel*> m_explosiveCalibres;
 
@@ -329,6 +331,7 @@ protected:
 	bool loadWeapons(const BinaryData& vanillaItemStrings);
 	bool loadArmours(const BinaryData& vanillaItemStrings);
 	bool loadSmokeEffects();
+	bool loadTilesets();
 	bool loadExplosionAnimations();
 	bool loadExplosives(const BinaryData& vanillaItemStrings, const std::vector<const ExplosionAnimationModel*>& animations);
 	bool loadItems(const BinaryData& vanillaItemStrings);

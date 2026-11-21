@@ -25,6 +25,7 @@ class ExplosionAnimationModel;
 class FactParamsModel;
 class GamePolicy;
 class SmokeEffectModel;
+struct TilesetModel;
 class GarrisonGroupModel;
 class IMPPolicy;
 class ExplosiveCalibreModel;
@@ -87,8 +88,8 @@ public:
 	/** Get tileset resource name. */
 	virtual ST::string getTilesetResourceName(int number, const ST::string& fileName) const = 0;
 
-	/** Get tileset db resource name. */
-	virtual ST::string getTilesetDBResName() const = 0;
+	/** The tilesets of tilesets.json (docs/tilesets-json-and-item-tile-types-plan.md). */
+	virtual const std::vector<TilesetModel>& getTilesets() const = 0;
 
 	/** Get all files in a specified directory. */
 	virtual std::vector<ST::string> getAllFiles(const ST::string& directory, const ST::string& extension) const = 0;
