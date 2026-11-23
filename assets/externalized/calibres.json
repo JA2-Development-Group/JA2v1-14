@@ -187,5 +187,15 @@
         "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
         "showInHelpText": true,
         "monsterWeapon": false
+    },
+    {
+        "index": 21,
+        "internalName": "AMMO939",
+        "sound": "sounds/weapons/9mm single shot.wav",
+        "burstSound": "sounds/weapons/9mm burst %d.wav",
+        "silencedSound": "sounds/weapons/silencer 02.wav",
+        "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
+        "showInHelpText": true,
+        "monsterWeapon": false
     }
 ]
