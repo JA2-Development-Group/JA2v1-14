@@ -734,7 +734,6 @@
         "bMetal": true,
         "bSinks": true,
         "bShowStatus": true,
-        "bNotBuyable": true,
         "tileGraphic": {
             "type": "GUNS",
             "subIndex": 16
@@ -1493,7 +1492,6 @@
         "bSinks": true,
         "bShowStatus": true,
         "bTwoHanded": true,
-        "bNotBuyable": true,
         "tileGraphic": {
             "type": "GUNS",
             "subIndex": 31
@@ -1635,7 +1633,6 @@
         "bSinks": true,
         "bShowStatus": true,
         "bTwoHanded": true,
-        "bNotBuyable": true,
         "tileGraphic": {
             "type": "GUNS",
             "subIndex": 34
@@ -4513,7 +4510,7 @@
         "ubDeadliness": 29,
         "ubMagSize": 30,
         "usRange": 330,
-        "ubAttackVolume": 40,
+        "ubAttackVolume": 77,
         "ubHitVolume": 7,
         "bDamageable": true,
         "bRepairable": true,
