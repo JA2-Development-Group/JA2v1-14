@@ -625,8 +625,8 @@
         },
         "ubWeight": 6,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 150,
         "minDropProgress": 50,
         "ubCoolness": 5,
@@ -654,11 +654,11 @@
         },
         "ubWeight": 6,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 100,
-        "minDropProgress": 40,
-        "ubCoolness": 4,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -683,11 +683,11 @@
         },
         "ubWeight": 5,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 150,
-        "minDropProgress": 40,
-        "ubCoolness": 4,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -712,11 +712,11 @@
         },
         "ubWeight": 5,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 100,
-        "minDropProgress": 30,
-        "ubCoolness": 3,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -741,8 +741,8 @@
         },
         "ubWeight": 3,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 60,
         "minDropProgress": 60,
         "ubCoolness": 6,
@@ -768,13 +768,13 @@
                 "path": "bigitems/p1item29.sti"
             }
         },
-        "ubWeight": 8,
+        "ubWeight": 9,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 180,
-        "minDropProgress": 40,
-        "ubCoolness": 4,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -799,8 +799,8 @@
         },
         "ubWeight": 3,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 40,
         "minDropProgress": 50,
         "ubCoolness": 5,
@@ -826,13 +826,13 @@
                 "path": "bigitems/p1item30.sti"
             }
         },
-        "ubWeight": 8,
+        "ubWeight": 9,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
         "usPrice": 120,
-        "minDropProgress": 30,
-        "ubCoolness": 3,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -857,11 +857,11 @@
         },
         "ubWeight": 1,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
-        "usPrice": 30,
-        "minDropProgress": 70,
-        "ubCoolness": 7,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 40,
+        "minDropProgress": 25,
+        "ubCoolness": 2,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -884,13 +884,13 @@
                 "path": "bigitems/p1item27.sti"
             }
         },
-        "ubWeight": 8,
+        "ubWeight": 7,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
-        "usPrice": 120,
-        "minDropProgress": 60,
-        "ubCoolness": 6,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 150,
+        "minDropProgress": 70,
+        "ubCoolness": 7,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -915,11 +915,11 @@
         },
         "ubWeight": 1,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
-        "usPrice": 20,
-        "minDropProgress": 60,
-        "ubCoolness": 6,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 25,
+        "minDropProgress": 25,
+        "ubCoolness": 2,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -942,13 +942,13 @@
                 "path": "bigitems/p1item28.sti"
             }
         },
-        "ubWeight": 8,
+        "ubWeight": 7,
         "ubPerPocket": 100,
-        "ubBigPerPocket": 8,
-        "ubSmallPerPocket": 4,
-        "usPrice": 80,
-        "minDropProgress": 50,
-        "ubCoolness": 5,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 100,
+        "minDropProgress": 70,
+        "ubCoolness": 7,
         "bMetal": true,
         "bSinks": true,
         "tileGraphic": {
@@ -1711,7 +1711,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 1
+                "subImageIndex": 301
             },
             "big": {
                 "path": "bigitems/new_item3001.png"
@@ -1728,7 +1728,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 1
+            "subIndex": 301
         }
     },
 	{
@@ -1740,7 +1740,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 2
+                "subImageIndex": 302
             },
             "big": {
                 "path": "bigitems/new_item3002.png"
@@ -1757,7 +1757,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 2
+            "subIndex": 302
         }
     },
     {
@@ -1769,7 +1769,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 3
+                "subImageIndex": 303
             },
             "big": {
                 "path": "bigitems/new_item3003.png"
@@ -1786,7 +1786,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 3
+            "subIndex": 303
         }
     },
 		{
@@ -1798,7 +1798,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 4
+                "subImageIndex": 304
             },
             "big": {
                 "path": "bigitems/new_item3004.png"
@@ -1815,7 +1815,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 4
+            "subIndex": 304
         }
     },
 	{
@@ -1827,7 +1827,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 5
+                "subImageIndex": 305
             },
             "big": {
                 "path": "bigitems/new_item3005.png"
@@ -1844,7 +1844,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 5
+            "subIndex": 305
         }
     },
 	{
@@ -1856,7 +1856,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 6
+                "subImageIndex": 306
             },
             "big": {
                 "path": "bigitems/new_item3006.png"
@@ -1873,7 +1873,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 6
+            "subIndex": 306
         }
     },
 	{
@@ -1885,7 +1885,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 7
+                "subImageIndex": 307
             },
             "big": {
                 "path": "bigitems/new_item3007.png"
@@ -1902,7 +1902,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 7
+            "subIndex": 307
         }
     },
 	{
@@ -1914,7 +1914,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 8
+                "subImageIndex": 308
             },
             "big": {
                 "path": "bigitems/new_item3008.png"
@@ -1931,7 +1931,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 8
+            "subIndex": 308
         }
     },
     {
@@ -1943,7 +1943,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 9
+                "subImageIndex": 309
             },
             "big": {
                 "path": "bigitems/new_item3009.png"
@@ -1960,7 +1960,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 9
+            "subIndex": 309
         }
     },
 	{
@@ -1972,7 +1972,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 10
+                "subImageIndex": 310
             },
             "big": {
                 "path": "bigitems/new_item3010.png"
@@ -1989,7 +1989,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 10
+            "subIndex": 310
         }
     },
 	{
@@ -2001,7 +2001,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 11
+                "subImageIndex": 311
             },
             "big": {
                 "path": "bigitems/new_item3011.png"
@@ -2018,7 +2018,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 11
+            "subIndex": 311
         }
     },
 	{
@@ -2030,7 +2030,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 12
+                "subImageIndex": 312
             },
             "big": {
                 "path": "bigitems/new_item3012.png"
@@ -2047,7 +2047,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 12
+            "subIndex": 312
         }
     },
 	{
@@ -2059,7 +2059,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 13
+                "subImageIndex": 313
             },
             "big": {
                 "path": "bigitems/new_item3013.png"
@@ -2076,7 +2076,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 13
+            "subIndex": 313
         }
     },
 	{
@@ -2088,7 +2088,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 14
+                "subImageIndex": 314
             },
             "big": {
                 "path": "bigitems/new_item3014.png"
@@ -2105,7 +2105,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 14
+            "subIndex": 314
         }
     },
 	{
@@ -2117,7 +2117,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 15
+                "subImageIndex": 315
             },
             "big": {
                 "path": "bigitems/new_item3015.png"
@@ -2134,7 +2134,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 15
+            "subIndex": 315
         }
     },
 	{
@@ -2146,7 +2146,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 16
+                "subImageIndex": 316
             },
             "big": {
                 "path": "bigitems/new_item3016.png"
@@ -2163,7 +2163,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 16
+            "subIndex": 316
         }
     },
 	{
@@ -2175,7 +2175,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 17
+                "subImageIndex": 317
             },
             "big": {
                 "path": "bigitems/new_item3017.png"
@@ -2192,7 +2192,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 17
+            "subIndex": 317
         }
     },
 	{
@@ -2204,7 +2204,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 18
+                "subImageIndex": 318
             },
             "big": {
                 "path": "bigitems/new_item3018.png"
@@ -2221,7 +2221,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 18
+            "subIndex": 318
         }
     },
 	{
@@ -2233,7 +2233,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 19
+                "subImageIndex": 319
             },
             "big": {
                 "path": "bigitems/new_item3019.png"
@@ -2250,7 +2250,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 19
+            "subIndex": 319
         }
     },
 	{
@@ -2262,7 +2262,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 20
+                "subImageIndex": 320
             },
             "big": {
                 "path": "bigitems/new_item3020.png"
@@ -2279,7 +2279,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 20
+            "subIndex": 320
         }
     },
 	{
@@ -2291,7 +2291,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 21
+                "subImageIndex": 321
             },
             "big": {
                 "path": "bigitems/new_item3021.png"
@@ -2308,7 +2308,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 21
+            "subIndex": 321
         }
     },
     {
@@ -2320,7 +2320,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 22
+                "subImageIndex": 322
             },
             "big": {
                 "path": "bigitems/new_item3022.png"
@@ -2337,7 +2337,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 22
+            "subIndex": 322
         }
     },
 	{
@@ -2349,7 +2349,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 23
+                "subImageIndex": 323
             },
             "big": {
                 "path": "bigitems/new_item3023.png"
@@ -2366,7 +2366,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 23
+            "subIndex": 323
         }
     },
 	{
@@ -2378,7 +2378,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 24
+                "subImageIndex": 324
             },
             "big": {
                 "path": "bigitems/new_item3024.png"
@@ -2395,7 +2395,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 24
+            "subIndex": 324
         }
     },
 	{
@@ -2407,7 +2407,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 25
+                "subImageIndex": 325
             },
             "big": {
                 "path": "bigitems/new_item3025.png"
@@ -2424,7 +2424,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 25
+            "subIndex": 325
         }
     },
 	{
@@ -2436,7 +2436,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 26
+                "subImageIndex": 326
             },
             "big": {
                 "path": "bigitems/new_item3026.png"
@@ -2453,7 +2453,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 26
+            "subIndex": 326
         }
     },
 	{
@@ -2465,7 +2465,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 27
+                "subImageIndex": 327
             },
             "big": {
                 "path": "bigitems/new_item3027.png"
@@ -2482,7 +2482,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 27
+            "subIndex": 327
         }
     },
 	{
@@ -2494,7 +2494,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 28
+                "subImageIndex": 328
             },
             "big": {
                 "path": "bigitems/new_item3028.png"
@@ -2511,7 +2511,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 28
+            "subIndex": 328
         }
     },
 	{
@@ -2523,7 +2523,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 29
+                "subImageIndex": 329
             },
             "big": {
                 "path": "bigitems/new_item3029.png"
@@ -2540,7 +2540,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 29
+            "subIndex": 329
         }
     },
 	{
@@ -2552,7 +2552,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 30
+                "subImageIndex": 330
             },
             "big": {
                 "path": "bigitems/new_item3030.png"
@@ -2569,7 +2569,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 30
+            "subIndex": 330
         }
     },
 	{
@@ -2581,7 +2581,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 31
+                "subImageIndex": 331
             },
             "big": {
                 "path": "bigitems/new_item3031.png"
@@ -2598,7 +2598,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 31
+            "subIndex": 331
         }
     },
 	{
@@ -2610,7 +2610,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 32
+                "subImageIndex": 332
             },
             "big": {
                 "path": "bigitems/new_item3032.png"
@@ -2627,7 +2627,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 32
+            "subIndex": 332
         }
     },
 	{
@@ -2639,7 +2639,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 33
+                "subImageIndex": 333
             },
             "big": {
                 "path": "bigitems/new_item3033.png"
@@ -2656,7 +2656,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 33
+            "subIndex": 333
         }
     },
 	{
@@ -2668,7 +2668,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 34
+                "subImageIndex": 334
             },
             "big": {
                 "path": "bigitems/new_item3034.png"
@@ -2685,7 +2685,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 34
+            "subIndex": 334
         }
     },
 	{
@@ -2697,7 +2697,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 35
+                "subImageIndex": 335
             },
             "big": {
                 "path": "bigitems/new_item3035.png"
@@ -2714,7 +2714,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 35
+            "subIndex": 335
         }
     },
 	{
@@ -2726,7 +2726,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 36
+                "subImageIndex": 336
             },
             "big": {
                 "path": "bigitems/new_item3036.png"
@@ -2743,7 +2743,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 36
+            "subIndex": 336
         }
     },
 	{
@@ -2755,7 +2755,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 37
+                "subImageIndex": 337
             },
             "big": {
                 "path": "bigitems/new_item3037.png"
@@ -2772,7 +2772,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 37
+            "subIndex": 337
         }
     },
 	{
@@ -2784,7 +2784,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 38
+                "subImageIndex": 338
             },
             "big": {
                 "path": "bigitems/new_item3038.png"
@@ -2801,7 +2801,7 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 38
+            "subIndex": 338
         }
     },
 	{
@@ -2813,7 +2813,7 @@
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
-                "subImageIndex": 39
+                "subImageIndex": 339
             },
             "big": {
                 "path": "bigitems/new_item3039.png"
@@ -2830,7 +2830,268 @@
         "bSinks": true,
         "tileGraphic": {
             "type": "NEW_ITEMS",
-            "subIndex": 39
+            "subIndex": 339
+        }
+    },
+	{
+        "itemIndex": 3040,
+        "internalName": "CLIP545_30_SUPER_AP",
+        "calibre": "AMMO545",
+        "capacity": 30,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 340
+            },
+            "big": {
+                "path": "bigitems/new_item3040.png"
+            }
+        },
+        "ubWeight": 6,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 200,
+        "minDropProgress": 40,
+        "ubCoolness": 4,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 340
+        }
+    },
+	{
+        "itemIndex": 3041,
+        "internalName": "CLIP556_30_SUPER_AP",
+        "calibre": "AMMO556",
+        "capacity": 30,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 341
+            },
+            "big": {
+                "path": "bigitems/new_item3041.png"
+            }
+        },
+        "ubWeight": 5,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 200,
+        "minDropProgress": 35,
+        "ubCoolness": 3,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 341
+        }
+    },
+	{
+        "itemIndex": 3042,
+        "internalName": "CLIP762W_30_SUPER_AP",
+        "calibre": "AMMO762W",
+        "capacity": 30,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 342
+            },
+            "big": {
+                "path": "bigitems/new_item3042.png"
+            }
+        },
+        "ubWeight": 5,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 200,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 342
+        }
+    },
+	{
+        "itemIndex": 3043,
+        "internalName": "CLIP939_20_HP",
+        "calibre": "AMMO939",
+        "capacity": 20,
+        "ammoType": "AMMO_HP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 343
+            },
+            "big": {
+                "path": "bigitems/new_item3043.png"
+            }
+        },
+        "ubWeight": 4,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 300,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 343
+        }
+    },
+	{
+        "itemIndex": 3044,
+        "internalName": "CLIP939_20_AP",
+        "calibre": "AMMO939",
+        "capacity": 20,
+        "ammoType": "AMMO_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 344
+            },
+            "big": {
+                "path": "bigitems/new_item3044.png"
+            }
+        },
+        "ubWeight": 4,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 400,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 344
+        }
+    },
+	{
+        "itemIndex": 3045,
+        "internalName": "CLIP939_20_SUPER_AP",
+        "calibre": "AMMO939",
+        "capacity": 20,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 345
+            },
+            "big": {
+                "path": "bigitems/new_item3045.png"
+            }
+        },
+        "ubWeight": 4,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 500,
+        "minDropProgress": 50,
+        "ubCoolness": 5,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 345
+        }
+    },
+	{
+        "itemIndex": 3046,
+        "internalName": "CLIP762W_10_SUPER_AP",
+        "calibre": "AMMO762W",
+        "capacity": 10,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 346
+            },
+            "big": {
+                "path": "bigitems/new_item3046.png"
+            }
+        },
+        "ubWeight": 3,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 80,
+        "minDropProgress": 60,
+        "ubCoolness": 6,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 346
+        }
+    },
+	{
+        "itemIndex": 3047,
+        "internalName": "CLIP762N_5_SUPER_AP",
+        "calibre": "AMMO762N",
+        "capacity": 5,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 347
+            },
+            "big": {
+                "path": "bigitems/new_item3047.png"
+            }
+        },
+        "ubWeight": 1,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 55,
+        "minDropProgress": 25,
+        "ubCoolness": 2,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 347
+        }
+    },
+	{
+        "itemIndex": 3048,
+        "internalName": "CLIP762N_20_SUPER_AP",
+        "calibre": "AMMO762N",
+        "capacity": 20,
+        "ammoType": "AMMO_SUPER_AP",
+        "inventoryGraphics": {
+            "small": {
+                "path": "interface/md_new_items.sti",
+                "subImageIndex": 348
+            },
+            "big": {
+                "path": "bigitems/new_item3048.png"
+            }
+        },
+        "ubWeight": 7,
+        "ubPerPocket": 100,
+        "ubBigPerPocket": 4,
+        "ubSmallPerPocket": 2,
+        "usPrice": 200,
+        "minDropProgress": 70,
+        "ubCoolness": 7,
+        "bMetal": true,
+        "bSinks": true,
+        "tileGraphic": {
+            "type": "NEW_ITEMS",
+            "subIndex": 348
         }
     }
 	

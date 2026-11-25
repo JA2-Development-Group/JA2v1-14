@@ -38,38 +38,53 @@
 		"CALICO_M960A": 3,
 		
 		
-		"M870": 3,
-        "SPAS15": 3,
-		"CAWS": 3,
 		"MINI_SHOTGUN": 3,
 		"STREET_SWEEPER": 3,
-		"BENELLI_M4S90": 3,
+		"M870": 3,
 		"SPAS12": 3,
+        "SPAS15": 3,
+		"BENELLI_M4S90": 3,
+		"SAIGA12": 3,
+		"USAS12": 3,
 		"AA12": 3,
 		"FOSTECH": 3,
-		"USAS12": 3,
-		"SAIGA12": 3,
+		"CAWS": 3,
+				
+		
+        "AKSU74": 3,
+		"MP53": 3,
+        "COMMANDO": 3,
+		"AK74": 3,
+		"AN94": 3,
+		"M4A1": 3,
+		"F2000": 3,
+		"M16A1": 3,
+		"AKM": 3,
+		"AK47": 3,
+		"ASVAL": 3,
+        "AUG": 3,
+        "G41": 3,
+		"TAR21": 3,
+		"HK33A2": 3,
+		"FAMAS": 3,
+		"G36E": 3,
+        "C7": 3,
+		"M16A4": 3,
+        "L85A2": 3,
+		"SCAR_LSV": 3,
+        "G11": 3,
+        "G3A3": 3,
+		"FNFAL": 3,
+        "M14": 3,
+        "SCAR_HSV": 3,
 		
 		
 		
 		
-        "COMMANDO": 1,
-        "MP53": 1,
-        "AKSU74": 1,
-       
-        "SKS": 1,
-        "DRAGUNOV": 1,
+		"MINI14": 2,
+		"SKS": 1,
+		"DRAGUNOV": 1,
         "M24": 1,
-        "AUG": 1,
-        "G41": 1,
-        "MINI14": 2,
-        "C7": 1,
-        "FAMAS": 1,
-        "AK74": 1,
-        "AKM": 1,
-        "M14": 1,
-        "FNFAL": 1,
-        "G3A3": 1,
 
         "MINIMI": 1,
         "RPK74": 1,
@@ -92,6 +107,10 @@
 		"CLIP9_15_HP": 16,
         "CLIP9_15_AP": 14,
 		"CLIP9_15_SUPER_AP": 12,
+		
+		"CLIP939_20_HP": 15,
+		"CLIP939_20_AP": 10,
+		"CLIP939_20_SUPER_AP": 5,
 		
 		"CLIP9_30": 30,
 		"CLIP9_30_HP": 10,
@@ -132,6 +151,12 @@
 		"CLIP44_8_AP": 8,
 		"CLIP44_8_SUPER_AP": 6,	
 		
+		"CLIP46_20_HP": 20,
+		"CLIP46_20_AP": 10,
+		"CLIP46_20_SUPER_AP": 5,
+		
+		"CLIP47_50_SAP": 5,
+		
 		"CLIP50AE_7_HP": 20,
 		"CLIP50AE_7_AP": 10,
 		"CLIP50AE_7_SUPER_AP": 5,
@@ -157,20 +182,35 @@
 		"CLIP12G_30_BUCKSHOT": 10,
 		"CLIP12G_30_FLECHETTE": 10,
 		
+		"CLIP545_30_HP": 20,
+        "CLIP545_30_AP": 10,
+		"CLIP545_30_SUPER_AP": 5,
+        
+		"CLIP556_30_HP": 20,
+        "CLIP556_30_AP": 10,
+		"CLIP556_30_SUPER_AP": 5,
+        
+		"CLIP762_25_30_HP": 20,
+		"CLIP762_25_30_AP": 10,
+		"CLIP762_25_30_SUPER_AP": 5,
 		
-        "CLIP545_30_AP": 25,
-        "CLIP545_30_HP": 5,
-        "CLIP556_30_AP": 15,
-        "CLIP556_30_HP": 5,
-        "CLIP762W_10_AP": 15,
-        "CLIP762W_30_AP": 12,
-        "CLIP762W_10_HP": 4,
-        "CLIP762W_30_HP": 5,
+		"CLIP762W_10_HP": 20,
+		"CLIP762W_10_AP": 10,
+		"CLIP762W_10_SUPER_AP": 5,
+        
+		"CLIP762W_30_HP": 20,
+		"CLIP762W_30_AP": 10,
+		"CLIP762W_30_SUPER_AP": 5,
+		
+		"CLIP762N_5_HP": 20,
         "CLIP762N_5_AP": 10,
+		"CLIP762N_5_SUPER_AP": 5,
+		
+		"CLIP762N_20_HP": 20,
         "CLIP762N_20_AP": 10,
-        "CLIP762N_5_HP": 5,
-        "CLIP762N_20_HP": 5,
-
+		"CLIP762N_20_SUPER_AP": 5,
+        
+        
         "STUN_GRENADE": 5,
         "TEARGAS_GRENADE": 5,
         "MUSTARD_GRENADE": 3,

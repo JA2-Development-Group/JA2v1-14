@@ -323,9 +323,9 @@ struct DropProgressTest : public GunStackTest
 
 TEST_F(DropProgressTest, baseDataStartsFromCoolness)
 {
-	// placeholder values until they are tuned: ubCoolness x 10 (the pistols and their
-	// ammo are tuned already)
-	for (UINT16 const item : { G41, LASERSCOPE, FIRSTAIDKIT })
+	// placeholder values until they are tuned: ubCoolness x 10 (the pistols, SMGs,
+	// shotguns, assault rifles and their ammo are tuned already)
+	for (UINT16 const item : { MINIMI, LASERSCOPE, FIRSTAIDKIT })
 	{
 		ItemModel const* const m = GCM->getItem(item);
 		EXPECT_EQ(m->getMinDropProgress(), m->getCoolness() * 10) << m->getInternalName().c_str();

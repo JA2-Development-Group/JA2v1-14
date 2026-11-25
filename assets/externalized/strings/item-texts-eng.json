@@ -108,18 +108,18 @@
     },
     {
         "internalName": "MP53",
-        "shortName": "MP53",
-        "name": "H&K MP53",
+        "shortName": "HK 53A3",
+        "name": "H&K 53A3",
         "description": "Heckler and Koch's latest addition to the submachine gun family is known for its excessive muzzle climb, making its use indoors inadvisable.",
-        "bobbyRayName": "H&K MP53",
+        "bobbyRayName": "H&K 53A3",
         "bobbyRayDescription": "This German sub-machine gun has a lethality and stopping power that is definitely disproportionate to its size. When fitted with a special flash suppresser, excessive muzzle flash that is common on short weapons, is eliminated."
     },
     {
         "internalName": "AKSU74",
-        "shortName": "AKSU-74",
-        "name": "AKSU-74",
+        "shortName": "AKS-74U",
+        "name": "AKS-74U",
         "description": "Commonly used by the Russian Spetsnaz, the muzzle flash from this SMG's short barrel has singed many an eyebrow.",
-        "bobbyRayName": "AKSU-74",
+        "bobbyRayName": "AKS-74U",
         "bobbyRayDescription": "Russian in origin, this sub-machine gun is a shorter version of the AK-74. It's a combat intensive weapon with a bulbous muzzle attachment to compensate for firing 5.45mm Soviet rifle cartridges in a much shorter barrel."
     },
     {
@@ -164,18 +164,18 @@
     },
     {
         "internalName": "AUG",
-        "shortName": "Steyr",
-        "name": "Steyr AUG",
+        "shortName": "AUG-A2",
+        "name": "Steyr AUG-A2",
         "description": "The 'Evil Assault Rifle' poster-child for US gun control lobbyists is the futuristic looking Austrian army standard rifle.",
-        "bobbyRayName": "Steyr AUG",
+        "bobbyRayName": "Steyr AUG-A2",
         "bobbyRayDescription": "This Austrian automatic rifle has a unique modular design with many interchangeable parts. It was one of the first rifles to use a plastic firing mechanism as well as plastic furniture."
     },
     {
         "internalName": "G41",
-        "shortName": "G41",
-        "name": "H&K G41",
+        "shortName": "G41A2",
+        "name": "HK G41A2",
         "description": "Harder hitting than a hangover from a night of downing German lager, this G41 will quickly become your enemy's headache.",
-        "bobbyRayName": "H&K G41",
+        "bobbyRayName": "HK G41A2",
         "bobbyRayDescription": "Built to NATO weapons standards, this assault rifle is a great piece of German engineering. It features an ejection port dust cover and a hold-open device to keep the bolt open when emptying the mag."
     },
     {
@@ -188,18 +188,18 @@
     },
     {
         "internalName": "C7",
-        "shortName": "C-7",
-        "name": "C-7",
+        "shortName": "C7A2",
+        "name": "Diemaco C7A2",
         "description": "This rifle shouts the Canuck motto, 'Anything the Yanks can do, we can do better.' This version of the M-16 is every merc's dream come true.",
-        "bobbyRayName": "C-7",
+        "bobbyRayName": "Diemaco C7A2",
         "bobbyRayDescription": "It's the Canadian version of the American M16A2. Trust those crazy Canucks to incorporate such safety devices as a case deflector to prevent empty cases from being flung into the faces of left-handed firers."
     },
     {
         "internalName": "FAMAS",
         "shortName": "FA-MAS",
-        "name": "FA-MAS",
+        "name": "FAMAS G2",
         "description": "Nicknamed 'The Bugle' by French Army Troops, this bullpup rifle packs the utility of the M-16 in under two-and-a-half feet.",
-        "bobbyRayName": "FA-MAS",
+        "bobbyRayName": "FAMAS G2",
         "bobbyRayDescription": "The French Army's FA-MAS rifle was the first 'bullpup' design to enter military service. It handles well, and shoots quite accurately. A bipod can also be attached for steadier shooting."
     },
     {
@@ -696,122 +696,122 @@
     },
     {
         "internalName": "CLIP545_30_AP",
-        "shortName": "5.45mm mag",
-        "name": "5.45mm Magazine",
+        "shortName": "5.45mm mag AP",
+        "name": "5.45x39mm Magazine AP",
         "description": "This 30-round magazine holds 5.45 light armor piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well.",
-        "bobbyRayName": "5.45mm Magazine",
+        "bobbyRayName": "5.45x39mm Magazine AP",
         "bobbyRayDescription": "One of our hottest commodities is this 30-round mag of 'acquired' Russian 5.45mm Armor Piercing ammunition. This round is guaranteed to make you the death of any party."
     },
     {
         "internalName": "CLIP545_30_HP",
         "shortName": "5.45mm mag HP",
-        "name": "5.45mm Magazine, HP",
+        "name": "5.45x39mm Magazine, HP",
         "description": "This 30-round magazine contains 5.45 jacketed hollow point ammunition. It features the combined effect of mushrooming on impact, and tumbling within its target to create enormous wound cavities.",
-        "bobbyRayName": "5.45mm Magazine, HP",
+        "bobbyRayName": "5.45x39mm Magazine, HP",
         "bobbyRayDescription": "Need a quick sure-shot way to collect on a life insurance policy? These 30 rounds of 5.45mm Hollow Point ammunition will show you the money in no time at all."
     },
     {
         "internalName": "CLIP556_30_AP",
-        "shortName": "5.56mm mag",
-        "name": "5.56mm Magazine",
+        "shortName": "5.56mm mag AP",
+        "name": "5.56x45mm Magazine AP",
         "description": "These 30 rounds of NATO standard light armor piercing ammunition have the ability to tumble within its target to create a much larger wound than what is normally expected from a such small bullet.",
-        "bobbyRayName": "5.56mm Magazine",
+        "bobbyRayName": "5.56x45mm Magazine AP",
         "bobbyRayDescription": "This 30-round magazine is filled with our NATO standard 5.56mm. This round's steel penetrator makes it possible to beat all but the best in today's body armor."
     },
     {
         "internalName": "CLIP556_30_HP",
         "shortName": "5.56mm mag HP",
-        "name": "5.56mm Magazine, HP",
+        "name": "5.56x45mm Magazine, HP",
         "description": "This 30-round magazine of 5.56 Remington hollow point ammo is a variation of the civilian .223 hunting round. Like the .223, it is designed to maximize nerve shock and blood loss.",
-        "bobbyRayName": "5.56mm Magazine, HP",
+        "bobbyRayName": "5.56x45mm Magazine, HP",
         "bobbyRayDescription": "This is the economical choice for target shooting, hunting, or stopping potential long-range muggings. These 30 rounds of 50 grain .223 JHP can save your life and your pocket book."
     },
     {
         "internalName": "CLIP762W_10_AP",
-        "shortName": "7.62mm WP 10",
-        "name": "7.62mm WP Magazine, 10",
+        "shortName": "7.62mm WP 10 AP",
+        "name": "7.62x39mm WP Magazine, 10 AP",
         "description": "This 10-round magazine of 7.62 Warsaw Pact issued AP ammunition is noted for its ability to defeat almost all forms of body armor and cause significant damage to unwilling recipients.",
-        "bobbyRayName": "7.62mm WP Mag, 10 rds",
+        "bobbyRayName": "7.62x39mm WP Mag, 10 AP",
         "bobbyRayDescription": "Packaged especially for the aspiring sharpshooter, these 10 rounds of Chinese 7.62mm Armor Piercing ammo is sure to provide you with the 'One Shot, One Kill' that'll make headlines the world over."
     },
     {
         "internalName": "CLIP762W_30_AP",
-        "shortName": "7.62mm WP 30",
-        "name": "7.62mm WP Magazine, 30",
+        "shortName": "7.62mm WP 30 AP",
+        "name": "7.62x39mm WP Magazine, 30 AP",
         "description": "These 30 rounds of Warsaw Pact issued 7.62mm anti-personnel AP ammo tend to maintain their shape on impact. Shape retention may increase its ability to defeat light body armor but it also reduces injury severity.",
-        "bobbyRayName": "7.62mm WP Mag, 30 rds",
+        "bobbyRayName": "7.62x39mm WP Mag, 30 AP",
         "bobbyRayDescription": "Looking for the perfect gift for the terrorist who has it all? Try a magazine of our surplus 7.62mm Warsaw Pact AP. It's the gift to end all gift giving."
     },
     {
         "internalName": "CLIP762W_10_HP",
-        "shortName": "7.62mm WP 10",
-        "name": "7.62mm WP Magazine, 10 HP",
+        "shortName": "7.62mm WP 10 HP",
+        "name": "7.62x39mm WP Magazine, 10 HP",
         "description": "These 10 rounds of 7.62 Warsaw Pact jacketed hollow point ammunition won't penetrate body armor as well as its armor piercing counterpart, but it makes up for it by making larger wound cavities.",
-        "bobbyRayName": "7.62mm WP Mag, 10 HP",
+        "bobbyRayName": "7.62x39mm WP Mag, 10 HP",
         "bobbyRayDescription": "When killing them is simply not enough. A small 10-round box of 7.62mm Hollow Point is a great way to send the point home in true brain splattering style."
     },
     {
         "internalName": "CLIP762W_30_HP",
-        "shortName": "7.62mm WP 30",
-        "name": "7.62mm WP Magazine, 30 HP",
+        "shortName": "7.62mm WP 30 HP",
+        "name": "7.62x39mm WP Magazine, 30 HP",
         "description": "This magazine contains 30 rounds of 7.62 Warsaw Pact hollow point ammo. Although use of this round against light armored opponents can sway a battle in your favor, it's less effective against heavy armor.",
-        "bobbyRayName": "7.62mm WP Mag, 30 HP",
+        "bobbyRayName": "7.62x39mm WP Mag, 30 HP",
         "bobbyRayDescription": "Ever get the urge to turn a person into a bloody sausage with legs? We recommend reaching for 30 rounds of our 7.62mm Hollow Point ammunition."
     },
     {
         "internalName": "CLIP762N_5_AP",
-        "shortName": "7.62mm NATO 5",
-        "name": "7.62mm NATO Magazine, 5",
+        "shortName": "7.62mm NATO 5 AP",
+        "name": "7.62x51mm NATO Magazine, 5 AP",
         "description": "These 5 loose rounds of 7.62mm NATO armor piercing ammo have the ability to defeat body armor at long ranges, making it the ideal sniping round.",
-        "bobbyRayName": "7.62mm NATO Mag, 5 rds",
+        "bobbyRayName": "7.62x51mm NATO Mag, 5 AP",
         "bobbyRayDescription": "This Armor Piercing 7.62mm NATO ammunition offers an ideal combination of range, penetration and damage that professional snipers demand."
     },
     {
         "internalName": "CLIP762N_20_AP",
-        "shortName": "7.62mm NATO 20",
-        "name": "7.62mm NATO Magazine, 20",
+        "shortName": "7.62mm NATO 20 AP",
+        "name": "7.62x51mm NATO Magazine, 20 AP",
         "description": "This mag contains 20 rounds of NATO standard 7.62mm AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges.",
-        "bobbyRayName": "7.62mm NATO Mag, 20 rds",
+        "bobbyRayName": "7.62x51mm NATO Mag, 20 AP",
         "bobbyRayDescription": "This 7.62mm 20-round magazine is simply brimming with death, especially when it's filled with a surplus of Full Metal Jacketed rounds. This magazine makes armor more or less moot."
     },
     {
         "internalName": "CLIP762N_5_HP",
-        "shortName": "7.62mm NATO 5",
-        "name": "7.62mm NATO Magazine, 5 HP",
+        "shortName": "7.62mm NATO 5 HP",
+        "name": "7.62x51mm NATO Magazine, 5 HP",
         "description": "What these 5 rounds of civilian .308 Winchester hunting ammunition lack in armor piercing abilities, is compensated for with their ability to cause severe injuries in unarmored opponents.",
-        "bobbyRayName": "7.62mm NATO Mag, 5 HP",
+        "bobbyRayName": "7.62x51mm NATO Mag, 5 HP",
         "bobbyRayDescription": "Take advantage of our limited time offer on a price-reduced 5-round sampler box of .308 Winchester Hollow Point ammunition. Whether you're out hunting or sniping, this round will be your one-shot stopper."
     },
     {
         "internalName": "CLIP762N_20_HP",
-        "shortName": "7.62mm NATO 20",
-        "name": "7.62mm NATO Magazine, 20 HP",
+        "shortName": "7.62mm NATO 20 HP",
+        "name": "7.62x51mm NATO Magazine, 20 HP",
         "description": "This high capacity magazine holds 20 rounds of .308 Winchester ammunition, the civilian variant of the 7.62 NATO round. It is best suited for hunting unarmored targets.",
-        "bobbyRayName": "7.62mm NATO Mag, 20 HP",
+        "bobbyRayName": "7.62x51mm NATO Mag, 20 HP",
         "bobbyRayDescription": "If power is what you demand, more power is what you'll get with these 20 rounds of Cor-Bon Tactical .308 Winchester ammunition, the civilian variant of the 7.62mm NATO round. It's more than enough power to put any problem 6-feet under."
     },
     {
         "internalName": "CLIP47_50_SAP",
-        "shortName": "4.7mm mag",
-        "name": "4.7mm Magazine",
+        "shortName": "4.7mm mag SAP",
+        "name": "4.7x33mm Magazine Super AP",
         "description": "This 50-round magazine contains 4.7mm caseless ammunition. This round possesses wound and range capabilites that are comparable to the 5.56mm NATO round, but is 40 per cent lighter.",
-        "bobbyRayName": "4.7mm Magazine",
+        "bobbyRayName": "4.7x33mm Magazine Super AP",
         "bobbyRayDescription": "Recovered crates from a classified German warehouse have supplied us with these 50-round magazines. They come complete with a full load of the legandary 4.7mm caseless ammunition."
     },
     {
         "internalName": "CLIP57_50_AP",
         "shortName": "5.7mm mag AP",
-        "name": "5.7mm Magazine AP",
+        "name": "5.7x28mm Magazine AP",
         "description": "This magazine contains 50 rounds of 5.7mm ammunition. This polymer pistol round performs remarkably well against both armored and unarmored opponents.",
-        "bobbyRayName": "5.7mm Magazine AP",
+        "bobbyRayName": "5.7x28mm Magazine AP",
         "bobbyRayDescription": "Do you loathe it when your opponents wear body armor? Say hasta la vista to every form of body armor that might stand between your target and Judgement Day with our 50-round magazine of 5.7mm pistol ammo."
     },
     {
         "internalName": "CLIP57_50_HP",
         "shortName": "5.7mm mag HP",
-        "name": "5.7mm Magazine, HP",
+        "name": "5.7x28mm Magazine, HP",
         "description": "These 50 rounds of 5.7mm hollow point ammunition have enhanced injury inflicting capabilities over the basic 5.7 and have retained most of its armor piercing capabilities.",
-        "bobbyRayName": "5.7mm Magazine, HP",
+        "bobbyRayName": "5.7x28mm Magazine, HP",
         "bobbyRayDescription": "Get the job done right the first time. You're kill-rate will be the best around if you use this 50-round magazine of 5.7mm Hollow Point ammunition. Your victim's chance at survival: roughly zero per cent, give or take a few points."
     },
     {
@@ -2778,6 +2778,140 @@
         "bobbyRayName": "Saiga 12K",
         "bobbyRayDescription": "Modeled after the AK-47, the Saiga is a well-designed and affordable semi-automatic shotgun with a host of personal defense and tactical applications."
     },
+	
+	
+	
+	
+	
+	
+	
+	// ASAULT RIFLES: 1601 - 1800
+	
+	
+	// 1601
+    {
+        "internalName": "AN94",
+        "shortName": "AN-94",
+        "name": "AN-94 Abakan",
+        "description": "The new AN-94 Abakan design enables the gun to pulse, firing a very fast two bullet burst before the recoil affects the user.",
+        "bobbyRayName": "AN-94 Abakan",
+        "bobbyRayDescription": "This weapon was designed by Gennadiy Nikonov. Another leap forward in gun making, you can be sure to see it soon on a hijacked airliner near you."
+    },
+	// 1602
+    {
+        "internalName": "F2000",
+        "shortName": "F2000",
+        "name": "FN F2000",
+        "description": "This futuristic and fearsome-looking rifle is Fabrique Nationale's latest entry into law enforcement weaponry.",
+        "bobbyRayName": "FN F2000",
+        "bobbyRayDescription": "The F2000 is a gas operated, rotating bolt, select-fire weapon. It features a polymer stock with a bull-pup layout. It comes standard with a 40mm grenade launcher."
+    },
+	// 1603
+    {
+        "internalName": "G36E",
+        "shortName": "G36E",
+        "name": "HK G36E",
+        "description": "G36 is a combination of old and new, tried and true that when combined makes for the further refinement of the small arms maker's art.",
+        "bobbyRayName": "HK G36E",
+        "bobbyRayDescription": "G36 is a combination of old and new, tried and true that when combined makes for the further refinement of the small arms maker's art."
+    },
+	// 1604
+    {
+        "internalName": "HK33A2",
+        "shortName": "HK 33A2",
+        "name": "HK 33A2",
+        "description": "The HK 33 is a downsized G3 made for the smaller cartridge.",
+        "bobbyRayName": "HK 33A2",
+        "bobbyRayDescription": "The HK33 is the first 5.56x45 caliber rifle to use the delayed roller lock bolt first perfected in the G3."
+    },
+	// 1605
+    {
+        "internalName": "L85A2",
+        "shortName": "L85A2",
+        "name": "Enfield L85A2",
+        "description": "This British weapon was actually made in Nottingham, not Enfield, where computer controlled tools were finally able to eliminate all of its serious defects.",
+        "bobbyRayName": "Enfield L85A2",
+        "bobbyRayDescription": "This British weapon was actually made in Nottingham, not Enfield, where computer controlled tools were finally able to eliminate all of its serious defects."
+    },
+	// 1606
+    {
+        "internalName": "TAR21",
+        "shortName": "TAR 21",
+        "name": "Tavor TAR 21",
+        "description": "This new Israeli high-tech machine gun will bullpup your socks off. Weighing only 5.5 pounds empty, this weapon of death can fire off 900 5.56mm bullets a minute.",
+        "bobbyRayName": "Tavor TAR 21",
+        "bobbyRayDescription": "This new Israeli high-tech machine gun will bullpup your socks off. Weighing only 5.5 pounds empty, this weapon of death can fire off 900 5.56mm bullets a minute."
+    },
+	// 1607
+    {
+        "internalName": "M4A1",
+        "shortName": "M4A1",
+        "name": "Colt M4A1",
+        "description": "As the mini version of the M16, this weapon is small but deadly. Used by many armed forces and law enforcement organizations.",
+        "bobbyRayName": "Colt M4A1",
+        "bobbyRayDescription": "Small, light and deadly, the M4A1 is extremely effective in close quarter battles. If you like the M16, you'll love the M4."
+    },
+	// 1608
+    {
+        "internalName": "M16A1",
+        "shortName": "M16A1",
+        "name": "Colt M16A1",
+        "description": "The improved version of the M16. Modified through experience from Vietnam.",
+        "bobbyRayName": "Colt M16A1",
+        "bobbyRayDescription": "The M16's deficiencies began to dissolve with this model. Ammo was now loaded with powders that produce much less residue in the gun action. Barrel, chamber, and bolt are chrome-lined to improve corrosion resistance."
+    },
+	// 1609
+    {
+        "internalName": "M16A4",
+        "shortName": "M16A4",
+        "name": "Colt M16A4",
+        "description": "The latest in the M16 series, the M16A4 features flat top receivers and Picatinny rails for increased accessory compatibility.",
+        "bobbyRayName": "Colt M16A4",
+        "bobbyRayDescription": "The latest model M16 assault rifle has everything the A2 has, and more. With the built-in Picatinny rail system, it can be outfitted with all the accessories you'll ever need."
+    },
+	// 1610
+    {
+        "internalName": "SCAR_LSV",
+        "shortName": "SCAR-L 5.56mm",
+        "name": "FN SCAR-L SV 5.56mm",
+        "description": "FN's latest addition to the SCAR family is the L or Light version, chambered in 5.56mm NATO. This is the sniper variant.",
+        "bobbyRayName": "FN SCAR-L SV 5.56mm",
+        "bobbyRayDescription": "FN's latest addition to the SCAR family is the L or Light version, chambered in 5.56mm NATO. This is the sniper variant."
+    },
+	// 1611
+    {
+        "internalName": "SCAR_HSV",
+        "shortName": "SCAR-H 7.62mm",
+        "name": "FN SCAR-H SV 7.62mm",
+        "description": "The SCAR is FN's newest offering to the military armament scene. The H stands for Heavy and refers to this version, firing the 7.62mm NATO round. This is the sniper variant.",
+        "bobbyRayName": "FN SCAR-H SV 7.62mm",
+        "bobbyRayDescription": "The SCAR is FN's newest offering to the military armament scene. The H stands for Heavy and refers to this version, firing the 7.62mm NATO round. This is the sniper variant."
+    },
+	// 1612
+    {
+        "internalName": "AK47",
+        "shortName": "AK-47",
+        "name": "AK-47",
+        "description": "Often copied, but never truly duplicated, Mikhail Kalashnikov's gift to the world has kept on giving for more than half a century of armed conflict.",
+        "bobbyRayName": "AK-47",
+        "bobbyRayDescription": "Universally known and respected amongst assault rifles. Get yours today!"
+    },
+	// 1613
+    {
+        "internalName": "ASVAL",
+        "shortName": "AS Val",
+        "name": "AS Val",
+        "description": "The Val assault rifle's integral suppressor enables the user to hose down a room full of enemies in utter and deadly silence.",
+        "bobbyRayName": "AS Val",
+        "bobbyRayDescription": "The tactical applications of a silenced assault weapon are limited only by the imagination (and moral inclinations) of the user."
+    },
+
+	
+	
+	
+	
+	
+	
 
 
 
@@ -3148,7 +3282,89 @@
         "description": "Unleash pure hell from your barreled friend, with this drum of flechette. Ideal when you're on point or defending your habitation from marauding interlopers.",
         "bobbyRayName": "12 Gauge Drum, 30 Flechette",
         "bobbyRayDescription": "Unleash pure hell from your barreled friend, with this drum of flechette. Ideal when you're on point or defending your habitation from marauding interlopers."
+    },
+	// 3040
+    {
+        "internalName": "CLIP545_30_SUPER_AP",
+        "shortName": "5.45mm Mag 30 Super AP",
+        "name": "5.45x39mm Magazine, 30 Super AP",
+        "description": "This 30-round magazine holds 5.45 super armor-piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well.",
+        "bobbyRayName": "5.45x39mm Magazine, 30 Super AP",
+        "bobbyRayDescription": "One of our hottest commodities is this 30-round mag of 'acquired' Russian 5.45mm super armor-piercing ammunition. This round is guaranteed to make you the death of any party."
+    },
+	// 3041
+    {
+        "internalName": "CLIP556_30_SUPER_AP",
+        "shortName": "5.56mm Mag 30 Super AP",
+        "name": "5.56x45mm Magazine, 30 Super AP",
+        "description": "These 30 NATO standard, super armor-piercing rounds have the ability to tumble within their target to create a much larger wound than what is normally expected from such a small bullet.",
+        "bobbyRayName": "5.56x45mm Magazine, 30 Super AP",
+        "bobbyRayDescription": "This 30-round magazine is filled with our NATO super armor-piercing 5.56mm. This round's steel penetrator makes it possible to beat all but the best in today's body armor."
+    },
+	// 3042
+    {
+        "internalName": "CLIP762W_30_SUPER_AP",
+        "shortName": "7.62mm Mag 30 Super AP",
+        "name": "7.62x39mm Magazine, 30 Super AP",
+        "description": "These 30 Warsaw Pact-issued, 7.62mm, super armor-piercing rounds tend to maintain their shape on impact. Shape retention may increase its ability to defeat light body armor but it also reduces injury severity.",
+        "bobbyRayName": "7.62x39mm Magazine, 30 Super AP",
+        "bobbyRayDescription": "Looking for the perfect gift for the terrorist who has it all? Try a magazine of our surplus 7.62mm Warsaw Pact Super AP. It's the gift to end all gift giving."
+    },
+	// 3043
+    {
+        "internalName": "CLIP939_20_HP",
+        "shortName": "9mm Mag 20 HP",
+        "name": "9x39mm Magazine, 20 HP",
+        "description": "Heavier than regular 9mm ammo, this 20-round hollow point magazine is manufactured for a unique set of Russian firearms.",
+        "bobbyRayName": "9x39mm Magazine, 20 HP",
+        "bobbyRayDescription": "Heavier than regular 9mm ammo, this 20-round hollow point magazine is manufactured for a unique set of Russian firearms, including the ever popular VAL silent sniper rifle."
+    },
+	// 3044
+    {
+        "internalName": "CLIP939_20_AP",
+        "shortName": "9mm Mag 20 AP",
+        "name": "9x39mm Magazine, 20 AP",
+        "description": "Heavier than regular 9mm ammo, this 20-round magazine is manufactured for a unique set of Russian firearms.",
+        "bobbyRayName": "9x39mm Magazine, 20 AP",
+        "bobbyRayDescription": "Heavier than regular 9mm ammo, this 20-round magazine is manufactured for a unique set of Russian firearms, including the ever popular VAL silent sniper rifle."
+    },
+	// 3045
+    {
+        "internalName": "CLIP939_20_SUPER_AP",
+        "shortName": "9mm Mag 20 Super AP",
+        "name": "9x39mm Magazine, 20 Super AP",
+        "description": "Heavier than regular 9mm ammo, this 20-round Super AP magazine is manufactured for a unique set of Russian firearms.",
+        "bobbyRayName": "9x39mm Magazine, 20 Super AP",
+        "bobbyRayDescription": "Heavier than regular 9mm ammo, this 20-round Super AP magazine is manufactured for a unique set of Russian firearms, including the ever popular VAL silent sniper rifle."
+    },
+	// 3046
+	{
+        "internalName": "CLIP762W_10_SUPER_AP",
+        "shortName": "7.62mm WP 10 SAP",
+        "name": "7.62x39mm WP Magazine, 10 Super AP",
+        "description": "This 10-round magazine of 7.62 Warsaw Pact issued Super AP ammunition is noted for its ability to defeat almost all forms of body armor and cause significant damage to unwilling recipients.",
+        "bobbyRayName": "7.62x39mm WP Mag, 10 Super AP",
+        "bobbyRayDescription": "Packaged especially for the aspiring sharpshooter, these 10 rounds of Chinese 7.62mm Super Armor Piercing ammo is sure to provide you with the 'One Shot, One Kill' that'll make headlines the world over."
+    },
+    // 3047
+    {
+        "internalName": "CLIP762N_5_SUPER_AP",
+        "shortName": "7.62mm NATO 5 SAP",
+        "name": "7.62x51mm NATO Magazine, 5 Super AP",
+        "description": "These 5 loose rounds of 7.62mm NATO super armor piercing ammo have the ability to defeat body armor at long ranges, making it the ideal sniping round.",
+        "bobbyRayName": "7.62x51mm NATO Mag, 5 Super AP",
+        "bobbyRayDescription": "This Super Armor Piercing 7.62mm NATO ammunition offers an ideal combination of range, penetration and damage that professional snipers demand."
+    },
+	// 3048
+    {
+        "internalName": "CLIP762N_20_SUPER_AP",
+        "shortName": "7.62mm NATO 20 SAP",
+        "name": "7.62x51mm NATO Magazine, 20 Super AP",
+        "description": "This mag contains 20 rounds of NATO standard 7.62mm Super AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges.",
+        "bobbyRayName": "7.62x51mm NATO Mag, 20 Super AP",
+        "bobbyRayDescription": "This 7.62mm 20-round super armor piercing magazine is simply brimming with death, especially when it's filled with a surplus of Full Metal Jacketed rounds. This magazine makes armor more or less moot."
     }
+
 
 	
 
