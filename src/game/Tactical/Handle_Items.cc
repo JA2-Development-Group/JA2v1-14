@@ -10,6 +10,7 @@
 #include "Structure.h"
 #include "VObject.h"
 #include "Weapons.h"
+#include "WeaponModels.h"
 #include "Points.h"
 #include "TileDef.h"
 #include "WorldDef.h"
@@ -373,6 +374,17 @@ ItemHandleResult HandleItem(SOLDIERTYPE* const s, INT16 usGridNo, const INT8 bLe
 			!HandleCheckForBadChangeToGetThrough(s, tgt, sTargetGridNo, bLevel))
 		{
 			return ITEM_HANDLE_OK;
+		}
+
+		// A burst-only gun has no single shot (docs/burst-modes.md): whoever
+		// fires it -- the player, the AI, a scripted attack -- fires a burst,
+		// unaimed like every burst. Before the AP costs, which depend on it.
+		if (item->isGun() && !s->bDoBurst && s->bWeaponMode != WM_ATTACHED &&
+			!item->asWeapon()->hasSingleShot())
+		{
+			if (!IsBurstMode(s->bWeaponMode)) s->bWeaponMode = DefaultWeaponMode(*s);
+			s->bDoBurst = TRUE;
+			s->bAimTime = 0;
 		}
 
 		// Get AP COSTS

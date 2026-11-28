@@ -72,6 +72,10 @@ struct WeaponModel : ItemModel
 	/** Has the weapon at least one burst mode? */
 	bool canBurst() const;
 
+	/** Can the weapon fire a single shot? A burst-only gun ("singleShot": false,
+	 * docs/burst-modes.md) fires bursts only. */
+	bool hasSingleShot() const { return singleShot; }
+
 	/** A launcher, a rocket gun, a flame gun or a weapon without a gun type (LAW, tank cannon) */
 	bool isHeavyWeapon() const;
 
@@ -123,6 +127,7 @@ struct WeaponModel : ItemModel
 	UINT8    ubShotsPerShortBurst; // 0 = no such burst mode
 	UINT8    ubShotsPerLongBurst;
 	UINT8    ubShotsPerFullBurst;  // factory magazine, a larger magazine doesn't lengthen it
+	bool     singleShot = true;    // false: bursts only, no single shot (docs/burst-modes.md)
 	UINT8    ubBurstPenalty;   // % penalty per shot after first
 	UINT8    ubBulletSpeed;    // bullet's travelling speed
 	UINT8    ubImpact;         // weapon's max damage impact (size & speed)

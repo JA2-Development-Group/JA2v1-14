@@ -159,6 +159,10 @@ items:
           title: Shots per full burst
           description: The factory magazine size (default `ubMagSize`), a larger magazine doesn't make the full burst longer. 0 = no full burst.
           $ref: types/uint8.schema.yaml
+        singleShot:
+          title: Single shot?
+          description: false = the gun fires bursts only, its weapon modes skip the single shot (docs/burst-modes.md). It needs a burst mode. Default true.
+          type: boolean
         ubShotsPerBurst:
           title: Shots per burst (deprecated)
           description: Used only when the burst fields above are missing, any value above 0 gives their defaults.

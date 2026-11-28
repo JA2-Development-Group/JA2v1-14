@@ -584,3 +584,66 @@ TEST(WeaponsTest, ReloadAPByWeaponType)
 
 	delete cm;
 }
+
+
+// docs/burst-modes.md, burst-only guns: "singleShot": false
+TEST(WeaponsTest, BurstOnlyGuns)
+{
+	DefaultContentManager * cm = DefaultContentManagerUT::createDefaultCMForTesting();
+	ASSERT_TRUE(cm->loadGameData());
+	GCM = cm;
+
+	// the light machine guns except the RPK-74 fire bursts only
+	for (char const* const name : { "MINIMI", "HK21E", "RPK", "PKM", "MG36RAS", "M60E4", "M134" })
+	{
+		WeaponModel const* const w = cm->getWeaponByName(name);
+		ASSERT_NE(w, nullptr) << name;
+		EXPECT_FALSE(w->hasSingleShot()) << name;
+		EXPECT_TRUE(w->canBurst()) << name;
+	}
+	EXPECT_TRUE(cm->getWeaponByName("RPK74")->hasSingleShot());
+	EXPECT_TRUE(cm->getWeaponByName("AK74")->hasSingleShot());
+
+	auto o = OBJECTTYPE{};
+	o.usItem = MINIMI;
+	EXPECT_FALSE(GunHasSingleShot(o));
+	o.usItem = COMBAT_KNIFE; // not a gun
+	EXPECT_TRUE(GunHasSingleShot(o));
+
+	// in hand: no single shot mode, the first burst mode instead
+	auto s = SOLDIERTYPE{};
+	s.bTeam = OUR_TEAM;
+	s.usAnimState = STANDING;
+	s.inv[HANDPOS].usItem = MINIMI;
+	EXPECT_EQ(DefaultWeaponMode(s), WM_BURST_SHORT);
+	s.bWeaponMode = WM_NORMAL;
+	s.bDoBurst = FALSE;
+	EnsureConsistentWeaponMode(&s);
+	EXPECT_EQ(s.bWeaponMode, WM_BURST_SHORT);
+	EXPECT_TRUE(s.bDoBurst);
+
+	// the B key: Short, Long, Full and round again, never Single
+	ChangeWeaponMode(&s);
+	EXPECT_EQ(s.bWeaponMode, WM_BURST_LONG);
+	ChangeWeaponMode(&s);
+	EXPECT_EQ(s.bWeaponMode, WM_BURST_FULL);
+	ChangeWeaponMode(&s);
+	EXPECT_EQ(s.bWeaponMode, WM_BURST_SHORT);
+	EXPECT_TRUE(s.bDoBurst);
+
+	// a gun with a single shot keeps it
+	s.inv[HANDPOS].usItem = cm->getWeaponByName("RPK74")->getItemIndex();
+	EXPECT_EQ(DefaultWeaponMode(s), WM_NORMAL);
+	s.bWeaponMode = WM_BURST_FULL;
+	ChangeWeaponMode(&s);
+	EXPECT_EQ(s.bWeaponMode, WM_NORMAL);
+	EXPECT_FALSE(s.bDoBurst);
+
+	// the JSON field is written only when false
+	JsonObject const m134 = cm->getWeaponByName("M134")->serialize().toObject();
+	EXPECT_TRUE(m134.has("singleShot"));
+	EXPECT_FALSE(m134.getOptionalBool("singleShot", true));
+	EXPECT_FALSE(cm->getWeaponByName("RPK74")->serialize().toObject().has("singleShot"));
+
+	delete cm;
+}

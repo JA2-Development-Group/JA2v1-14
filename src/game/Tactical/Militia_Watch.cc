@@ -25,6 +25,7 @@
 #include "RenderWorld.h"
 #include "Soldier_Control.h"
 #include "Soldier_Functions.h"
+#include "Weapons.h"
 #include "Animation_Data.h"
 #include "Logger.h"
 #include "Game_Clock.h"
@@ -248,7 +249,11 @@ static void EndOwnAttack(SOLDIERTYPE& s)
 	}
 	s.uiStatusFlags   &= ~SOLDIER_ATTACK_NOTICED;
 	s.ubAttackingHand  = HANDPOS;
-	if (s.bWeaponMode == WM_ATTACHED) s.bWeaponMode = WM_NORMAL;
+	if (s.bWeaponMode == WM_ATTACHED)
+	{
+		s.bWeaponMode = WM_NORMAL;
+		EnsureConsistentWeaponMode(&s); // a burst-only gun: its burst
+	}
 	s.sLastTarget      = s.sTargetGridNo;
 	EndMuzzleFlash(&s);
 	FreeUpNPCFromAttacking(&s);

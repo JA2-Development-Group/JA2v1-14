@@ -82,6 +82,37 @@ for every merc whatever his AP, wounds or marksmanship (full rules:
 - Ready time, turning, the 1 AP for a new target and aiming clicks come on top, as for a
   single shot. Bursts aren't aimed.
 
+## Burst-only guns
+
+A gun with `"singleShot": false` in `weapons.json` has no single shot, it fires
+bursts only. In the data: every light machine gun except the RPK-74 (Minimi,
+HK21E, RPK, PKM, MG36 RAS, M60E4, M134). The field needs a burst mode, else the
+game stops at start (`WeaponModel`, `DataError`); it is written to JSON only when
+false.
+
+- **Modes:** B and the panel button skip Single: Short → Long → Full →
+  underslung grenade launcher → Short (`IsWeaponModeAvailable()`). Taken in hand,
+  the gun starts in its first burst mode (`DefaultWeaponMode()`,
+  `EnsureConsistentWeaponMode()`: picking up, the hand item changing, selecting
+  the merc, after a grenade launcher shot).
+- **Firing:** whoever fires it -- a merc, the AI, a scripted attack -- fires a
+  burst, unaimed (`HandleItem()`, before the AP costs). There is no aiming with it.
+- **AI:** like a tank: it shoots only when it has the AP for the whole burst, and
+  always bursts, also at a downed target or with one round left (`CalcBestShot()`,
+  `DecideActionBlack()`).
+- **Weapon boxes:** no single shot line -- no single bullet icon, no "AP:" with
+  its "=" and value. The burst lines show the full burst costs, unjamming still
+  costs `ubAPCostPerSingleShot` (it also stays the base of the costs, see AP costs).
+
+### Long bursts in the weapon boxes
+
+A burst of more than 10 rounds doesn't fit as bullet icons. For any gun, a burst
+of 11 rounds or more is drawn shortened (`DrawBurstRounds()`,
+`Interface_Items.cc`): Short as 3 bullet icons, Long as 6, each followed by
+`...(N)` with the rounds of the burst, its letters ending on the icons' bottom
+row. FONT12ARIAL on the big weapon box (Short and Long lines), BLOCKFONT2 on
+the other boxes (they show the Short burst). Full keeps its "Up to N".
+
 ## Who uses which mode
 
 - **Player mercs:** the mode chosen with B or the panel button.

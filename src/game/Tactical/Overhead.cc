@@ -2166,6 +2166,10 @@ void SelectSoldier(SOLDIERTYPE* const s, const SelSoldierFlags flags)
 
 	SetSelectedMan(s);
 
+	// a merc who got a burst-only gun without taking it in hand (hiring, the
+	// editor's placements) starts in its burst mode (docs/burst-modes.md)
+	EnsureConsistentWeaponMode(s);
+
 	// find which squad this guy is, then set selected squad to this guy
 	SetCurrentSquad(s->bAssignment, FALSE);
 
@@ -5976,8 +5980,9 @@ static SOLDIERTYPE* InternalReduceAttackBusyCount(SOLDIERTYPE* const pSoldier, c
 
 	if ( pSoldier && pSoldier->bWeaponMode == WM_ATTACHED )
 	{
-		// change back to single shot
+		// change back to single shot (a burst-only gun: its burst)
 		pSoldier->bWeaponMode = WM_NORMAL;
+		EnsureConsistentWeaponMode(pSoldier);
 	}
 
 	// record last target

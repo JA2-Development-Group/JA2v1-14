@@ -106,6 +106,7 @@ void WeaponModel::serializeBurstModes(JsonObject &obj) const
 	obj.set("ubShotsPerShortBurst", ubShotsPerShortBurst);
 	obj.set("ubShotsPerLongBurst",  ubShotsPerLongBurst);
 	obj.set("ubShotsPerFullBurst",  ubShotsPerFullBurst);
+	if (!singleShot) obj.set("singleShot", false);
 }
 
 // Burst lengths and their AP costs, see
@@ -648,6 +649,13 @@ WeaponModel* WeaponModel::deserialize(const JsonValue &json,
 		internalType == "SHOTGUN" || internalType == "LMG")
 	{
 		wep->deserializeBurstModes(obj);
+	}
+
+	// a burst-only gun (docs/burst-modes.md): it needs a burst mode to fire at all
+	wep->singleShot = obj.getOptionalBool("singleShot", true);
+	if (!wep->singleShot && !wep->canBurst())
+	{
+		throw DataError(ST::format("'{}' has \"singleShot\": false but no burst mode", wep->getInternalName()));
 	}
 
 	wep->shortName    = ItemModel::deserializeShortName(initData);

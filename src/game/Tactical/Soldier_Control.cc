@@ -7592,6 +7592,8 @@ void ReLoadSoldierAnimationDueToHandItemChange(SOLDIERTYPE* const s, UINT16 cons
 		s->bDoBurst    = FALSE;
 		s->bWeaponMode = WM_NORMAL;
 	}
+	// a burst-only gun taken in hand starts in its burst mode (docs/burst-modes.md)
+	if (s->inv[HANDPOS].usItem == usNewItem) EnsureConsistentWeaponMode(s);
 
 	if (gAnimControl[s->usAnimState].uiFlags & ANIM_FIREREADY)
 	{

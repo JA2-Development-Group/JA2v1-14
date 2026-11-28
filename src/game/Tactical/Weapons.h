@@ -161,6 +161,12 @@ extern UINT32 CalcChanceToPunch(SOLDIERTYPE *pAttacker, SOLDIERTYPE * pDefender,
 extern UINT32 CalcChanceToStab(SOLDIERTYPE * pAttacker,SOLDIERTYPE *pDefender, UINT8 ubAimTime);
 void ReloadWeapon(SOLDIERTYPE*, UINT8 inv_pos);
 bool IsGunBurstCapable(SOLDIERTYPE const*, UINT8 inv_pos);
+// Can the item fire a single shot? False only for a burst-only gun
+// ("singleShot": false, docs/burst-modes.md); true for every other item.
+bool GunHasSingleShot(OBJECTTYPE const&);
+// The mode a soldier takes with the item in hand: WM_NORMAL, for a burst-only
+// gun its first burst mode (Short, Long, Full).
+WeaponModes DefaultWeaponMode(SOLDIERTYPE const&);
 void EnsureConsistentWeaponMode(SOLDIERTYPE*);
 void SetWeaponMode(SOLDIERTYPE*, WeaponModes);
 bool IsBurstMode(WeaponModes);

@@ -8174,6 +8174,7 @@ void HandleTacticalEffectsOfEquipmentChange(SOLDIERTYPE* pSoldier, UINT32 uiInvP
 	{
 		pSoldier->bWeaponMode = WM_NORMAL;
 		pSoldier->bDoBurst = FALSE;
+		EnsureConsistentWeaponMode(pSoldier); // a burst-only gun: its burst
 	}
 
 	// if he is loaded tactically

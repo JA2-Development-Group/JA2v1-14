@@ -4130,15 +4130,33 @@ bool HasLauncher(const SOLDIERTYPE* const s)
 }
 
 
+bool GunHasSingleShot(OBJECTTYPE const& o)
+{
+	ItemModel const* const item = GCM->getItem(o.usItem);
+	return !item->isGun() || item->asWeapon()->hasSingleShot();
+}
+
+
 // Can the main hand item be used in this weapon mode?
 static bool IsWeaponModeAvailable(SOLDIERTYPE const* const s, WeaponModes const mode)
 {
 	switch (mode)
 	{
-		case WM_NORMAL:   return true;
+		case WM_NORMAL:   return GunHasSingleShot(s->inv[HANDPOS]);
 		case WM_ATTACHED: return HasLauncher(s);
 		default:          return GunShotsPerBurst(s->inv[HANDPOS], mode) > 0;
 	}
+}
+
+
+WeaponModes DefaultWeaponMode(SOLDIERTYPE const& s)
+{
+	if (IsWeaponModeAvailable(&s, WM_NORMAL)) return WM_NORMAL;
+	for (WeaponModes const mode : { WM_BURST_SHORT, WM_BURST_LONG, WM_BURST_FULL })
+	{
+		if (IsWeaponModeAvailable(&s, mode)) return mode;
+	}
+	return WM_NORMAL; // can't happen: a burst-only gun has a burst mode (WeaponModel)
 }
 
 
@@ -4147,7 +4165,7 @@ void EnsureConsistentWeaponMode(SOLDIERTYPE* const s)
 {
 	if (!IsWeaponModeAvailable(s, s->bWeaponMode))
 	{
-		s->bWeaponMode = WM_NORMAL;
+		s->bWeaponMode = DefaultWeaponMode(*s);
 	}
 
 	s->bDoBurst = IsBurstMode(s->bWeaponMode);
@@ -4180,7 +4198,8 @@ static WeaponModes NextWeaponMode(WeaponModes const mode)
 
 
 // Change the soldier's weapon mode to the next possible in
-// the cycle NORMAL ➔ SHORT ➔ LONG ➔ FULL ➔ ATTACHED
+// the cycle NORMAL ➔ SHORT ➔ LONG ➔ FULL ➔ ATTACHED (a burst-only gun
+// skips NORMAL, docs/burst-modes.md)
 void ChangeWeaponMode(SOLDIERTYPE* const s)
 {
 	// ATE: Don't do this if in a fire amimation.....
@@ -4188,11 +4207,14 @@ void ChangeWeaponMode(SOLDIERTYPE* const s)
 
 	WeaponModes const previousMode = s->bWeaponMode;
 	WeaponModes mode = previousMode;
-	do
+	// at most once round the cycle: it ends at an available mode (a burst-only
+	// gun has no NORMAL, but at least one burst mode)
+	for (int i = 0; i != NUM_WEAPON_MODES; ++i)
 	{
 		mode = NextWeaponMode(mode);
+		if (IsWeaponModeAvailable(s, mode)) break;
 	}
-	while (!IsWeaponModeAvailable(s, mode)); // ends at WM_NORMAL at the latest
+	if (!IsWeaponModeAvailable(s, mode)) mode = DefaultWeaponMode(*s);
 
 	if (previousMode == mode)
 	{

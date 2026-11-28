@@ -102,6 +102,8 @@ void CalcBestShot(SOLDIERTYPE *pSoldier, ATTACKTYPE *pBestShot)
 	pSoldier->usAttackingWeapon = pSoldier->inv[HANDPOS].usItem;
 
 	UINT8 const ubBurstAPs = CalcAPsToBurst(pSoldier->inv[HANDPOS], GetActiveBurstMode(*pSoldier));
+	// like a tank, a burst-only gun always bursts (docs/burst-modes.md)
+	bool const fAlwaysBurst = TANK(pSoldier) || !GunHasSingleShot(pSoldier->inv[HANDPOS]);
 
 	InitAttackType(pBestShot);      // set all structure fields to defaults
 
@@ -180,7 +182,7 @@ void CalcBestShot(SOLDIERTYPE *pSoldier, ATTACKTYPE *pBestShot)
 
 		// calculate the maximum possible aiming time
 
-		if ( TANK( pSoldier ) )
+		if (fAlwaysBurst)
 		{
 			ubMaxPossibleAimTime = pSoldier->bActionPoints - ubMinAPcost;
 

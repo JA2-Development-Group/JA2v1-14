@@ -555,6 +555,33 @@ cache_key_t const guiMoneyItemDescBox{ INTERFACEDIR "/Infobox_money.sti" };
 cache_key_t const guiGenericItemDescBox{ INTERFACEDIR "/Infobox_items.sti" };
 
 cache_key_t const guiBullet{ INTERFACEDIR "/bullet.sti" };
+
+// The rounds of a burst in the weapon boxes: a bullet icon (3x8) per round. A
+// burst of more than BURST_ROUNDS_DRAWN_MAX rounds doesn't fit: `shortened`
+// icons (3 for Short, 6 for Long), then "...(N)" in `font`, its letters
+// ending on the icons' bottom row (docs/burst-modes.md).
+#define BURST_ROUNDS_DRAWN_MAX 10
+static void DrawBurstRounds(SGPVSurface* const buffer, INT32 x, INT32 const y, UINT8 const rounds,
+	INT32 const shortened, SGPFont const font, UINT8 const colour)
+{
+	bool  const shorten = rounds > BURST_ROUNDS_DRAWN_MAX;
+	INT32 const icons   = shorten ? shortened : rounds;
+	for (INT32 i = 0; i != icons; ++i)
+	{
+		BltVideoObject(buffer, guiBullet, 0, x, y);
+		x += BULLET_WIDTH + 1;
+	}
+	if (!shorten) return;
+
+	// the capitals' last ink row: FONT12ARIAL row 8, BLOCKFONT2 row 5; the
+	// icon's: row 7
+	INT32 const text_y = y + 7 - (font == FONT12ARIAL ? 8 : 5);
+	SetFontDestBuffer(buffer);
+	SetFontAttributes(font, colour);
+	MPrint(x, text_y, ST::format("...({})", rounds));
+	SetFontDestBuffer(FRAME_BUFFER);
+}
+
 cache_key_t const guiGoldKeyVO{ INTERFACEDIR "/gold_key_button.sti" };
 // Same cache entry as guiSMBookmarksVO in Interface_Panels.cc (cache_key_t
 // is just the path string -- GetVObject()/BltVideoObject() share one
@@ -4141,12 +4168,9 @@ static void RenderMapBigWeaponBoxTexts(OBJECTTYPE const& obj, INT16 const dx, IN
 		}
 		else
 		{
-			INT32 x = dx + r.sX + r.sValDx;
-			for (INT32 i = GunShotsPerBurst(obj, modes[m]); i != 0; --i)
-			{
-				BltVideoObject(FRAME_BUFFER, guiBullet, 0, x, dy + r.sY);
-				x += BULLET_WIDTH + 1;
-			}
+			// more than 10 rounds: 3 (Short) or 6 (Long) icons and "...(N)"
+			DrawBurstRounds(FRAME_BUFFER, dx + r.sX + r.sValDx, dy + r.sY, GunShotsPerBurst(obj, modes[m]),
+				modes[m] == WM_BURST_SHORT ? 3 : 6, FONT12ARIAL, MAP_BIG_WEAPON_VALUE_COLOUR);
 		}
 	}
 
@@ -4436,7 +4460,9 @@ void RenderItemDescriptionBox(void)
 
 	if (item->isGun())
 	{
-		// display bullets for ROF
+		// display bullets for ROF -- not for a burst-only gun, it has no single
+		// shot (docs/burst-modes.md)
+		if (GunHasSingleShot(obj))
 		{
 			INT32 const x = IsMapWeaponBox() ? dx + TB(IsMapBigWeaponBox() ? g_map_weapons_big_bullet_sing : g_map_weapons_bullet_sing).iX : in_map ? MAP_BULLET_SING_X : BULLET_SING_X;
 			INT32 const y = IsMapWeaponBox() ? dy + TB(IsMapBigWeaponBox() ? g_map_weapons_big_bullet_sing : g_map_weapons_bullet_sing).iY : in_map ? MAP_BULLET_SING_Y : BULLET_SING_Y;
@@ -4448,14 +4474,11 @@ void RenderItemDescriptionBox(void)
 		// their own rounds (RenderMapBigWeaponBoxTexts())
 		if (w->ubShotsPerShortBurst > 0 && !IsMapBigWeaponBox())
 		{
-			INT32       x = IsMapWeaponBox() ? dx + g_map_weapons_bullet_burst.iX : in_map ? MAP_BULLET_BURST_X : BULLET_BURST_X;
+			INT32 const x = IsMapWeaponBox() ? dx + g_map_weapons_bullet_burst.iX : in_map ? MAP_BULLET_BURST_X : BULLET_BURST_X;
 			INT32 const y = IsMapWeaponBox() ? dy + g_map_weapons_bullet_burst.iY : in_map ? MAP_BULLET_BURST_Y : BULLET_BURST_Y;
-			// the item description shows the short burst, see docs/burst-modes.md
-			for (INT32 i = GunShotsPerBurst(obj, WM_BURST_SHORT); i != 0; --i)
-			{
-				BltVideoObject(guiSAVEBUFFER, guiBullet, 0, x, y);
-				x += BULLET_WIDTH + 1;
-			}
+			// the item description shows the short burst, see docs/burst-modes.md;
+			// more than 10 rounds: 3 icons and "...(N)"
+			DrawBurstRounds(guiSAVEBUFFER, x, y, GunShotsPerBurst(obj, WM_BURST_SHORT), 3, BLOCKFONT2, ITEMDESC_VALUE_COLOUR);
 		}
 
 		if ((!in_map || gMapItemDescLayout == MAP_ITEMDESC_LAYOUT_WEAPONS) && w->ubShotsPerShortBurst > 0)
@@ -4690,8 +4713,13 @@ void RenderItemDescriptionBox(void)
 		{
 			MPrint(dx + ids[3].sX, dy + ids[3].sY, gWeaponStatsDesc[4]); // damage
 		}
-		MPrint(dx + ids[4].sX, dy + ids[4].sY, gWeaponStatsDesc[5]); // APs
-		if (item->isGun())
+		// the single shot's line: not for a burst-only gun (docs/burst-modes.md)
+		bool const single_shot = GunHasSingleShot(obj);
+		if (single_shot)
+		{
+			MPrint(dx + ids[4].sX, dy + ids[4].sY, gWeaponStatsDesc[5]); // APs
+		}
+		if (item->isGun() && single_shot)
 		{
 			MPrint(dx + ids[6].sX, dy + ids[6].sY, gWeaponStatsDesc[6]); // = (sic)
 		}
@@ -4737,10 +4765,13 @@ void RenderItemDescriptionBox(void)
 		UINT8 const ubAttackAPs = BaseAPsToShootOrStab(obj);
 
 		//APs
-		HighlightIf(ubAttackAPs <= EXCEPTIONAL_AP_COST, value_colour);
-		pStr = ST::format("{2d}", ubAttackAPs);
-		FindFontRightCoordinates(dx + ids[4].sX + ids[4].sValDx, dy + ids[4].sY, ITEM_STATS_WIDTH, stats_h, pStr, stats_font, &usX, &usY);
-		MPrint(usX, usY, pStr);
+		if (single_shot)
+		{
+			HighlightIf(ubAttackAPs <= EXCEPTIONAL_AP_COST, value_colour);
+			pStr = ST::format("{2d}", ubAttackAPs);
+			FindFontRightCoordinates(dx + ids[4].sX + ids[4].sValDx, dy + ids[4].sY, ITEM_STATS_WIDTH, stats_h, pStr, stats_font, &usX, &usY);
+			MPrint(usX, usY, pStr);
+		}
 
 		if (w->ubShotsPerShortBurst > 0 && !big)
 		{

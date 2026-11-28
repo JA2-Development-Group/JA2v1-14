@@ -3254,10 +3254,14 @@ static INT8 DecideActionBlack(SOLDIERTYPE* pSoldier)
 			// IF ENOUGH APs TO BURST, RANDOM CHANCE OF DOING SO
 			//////////////////////////////////////////////////////////////////////////
 
+			// a burst-only gun has no single shot: it always bursts, also at a
+			// downed target or with one round left (docs/burst-modes.md)
+			bool const fBurstOnly = !GunHasSingleShot(pSoldier->inv[BestAttack.bWeaponIn]);
 			if (IsGunBurstCapable(pSoldier, BestAttack.bWeaponIn) &&
-				BestShot.opponent->bLife >= OKLIFE && // don't burst at downed targets
+				(fBurstOnly ||
+				(BestShot.opponent->bLife >= OKLIFE && // don't burst at downed targets
 				pSoldier->inv[BestAttack.bWeaponIn].ubGunShotsLeft > 1 &&
-				pSoldier->bTeam != OUR_TEAM)
+				pSoldier->bTeam != OUR_TEAM)))
 			{
 				// two one-handed guns burst together: the cost of the dual burst
 				// (docs/dual-burst-plan.md, D9)
@@ -3268,7 +3272,7 @@ static INT8 DecideActionBlack(SOLDIERTYPE* pSoldier)
 				if (pSoldier->bActionPoints - (BestAttack.ubAPCost - BestAttack.ubAimTime) >= ubBurstAPs )
 				{
 					// Base chance of bursting is 25% if best shot was +0 aim, down to 8% at +4
-					if ( TANK( pSoldier ) )
+					if (TANK(pSoldier) || fBurstOnly)
 					{
 						iChance = 100;
 					}
