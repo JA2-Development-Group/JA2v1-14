@@ -197,5 +197,35 @@
         "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
         "showInHelpText": true,
         "monsterWeapon": false
+    },
+    {
+        "index": 22,
+        "internalName": "AMMO762_54",
+        "sound": "sounds/weapons/7,62 wp single shot.wav",
+        "burstSound": "sounds/weapons/7,62 wp burst %d.wav",
+        "silencedSound": "sounds/weapons/silencer 03.wav",
+        "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
+        "showInHelpText": true,
+        "monsterWeapon": false
+    },
+    {
+        "index": 23,
+        "internalName": "AMMO127_99",
+        "sound": "sounds/weapons/7,62 nato single shot.wav",
+        "burstSound": "sounds/weapons/7,62 nato burst %d.wav",
+        "silencedSound": "sounds/weapons/silencer 03.wav",
+        "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
+        "showInHelpText": true,
+        "monsterWeapon": false
+    },
+    {
+        "index": 24,
+        "internalName": "AMMO127_108",
+        "sound": "sounds/weapons/7,62 wp single shot.wav",
+        "burstSound": "sounds/weapons/7,62 wp burst %d.wav",
+        "silencedSound": "sounds/weapons/silencer 03.wav",
+        "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",
+        "showInHelpText": true,
+        "monsterWeapon": false
     }
 ]
