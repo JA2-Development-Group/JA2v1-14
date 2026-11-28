@@ -16,6 +16,7 @@
 #include "Vehicles.h"
 #include "OppList.h"
 #include "Bullets.h"
+#include "Explosion_Control.h"
 #include "Items.h"
 #include "Soldier_Profile.h"
 #include "WorldMan.h"
@@ -2216,6 +2217,18 @@ static BOOLEAN BulletHitMerc(BULLET* pBullet, STRUCTURE* pStructure, BOOLEAN fIn
 	{
 		// someone has been hit so no close-call quotes
 		gTacticalStatus.fSomeoneHit = TRUE;
+	}
+
+	// explosive rounds (AMMO_EXPL): only a mini grenade's explosion (its damage
+	// and animation) where the round hits, no bullet damage -- like a LAW
+	// (WeaponHit()); the round always stops in the target
+	if (ubAmmoType == AMMO_EXPL)
+	{
+		MakeNoise(pFirer, tgt.sGridNo, tgt.bLevel, GCM->getWeapon(pBullet->usWeapon)->ubHitVolume, NOISE_BULLET_IMPACT);
+		IgniteExplosionXY(pFirer, tgt.dXPos, tgt.dYPos, 0, tgt.sGridNo, MINI_GRENADE, tgt.bLevel);
+		SLOGD("Freeing up attacker - explosive round hit a soldier");
+		FreeUpAttacker(pFirer);
+		return( fStopped );
 	}
 
 	// handle hit!

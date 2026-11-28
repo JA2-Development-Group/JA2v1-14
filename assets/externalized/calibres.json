@@ -221,7 +221,7 @@
     {
         "index": 24,
         "internalName": "AMMO127_108",
-        "sound": "sounds/weapons/7,62 wp single shot.wav",
+        "sound": "sounds/weapons/TANK_CANNON.WAV",
         "burstSound": "sounds/weapons/7,62 wp burst %d.wav",
         "silencedSound": "sounds/weapons/silencer 03.wav",
         "silencedBurstSound": "sounds/weapons/silencer burst %d.wav",

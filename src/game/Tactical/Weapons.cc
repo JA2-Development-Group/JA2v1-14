@@ -1875,17 +1875,6 @@ static BOOLEAN DoSpecialEffectAmmoMiss(SOLDIERTYPE* const attacker, const INT16 
 
 		return( TRUE );
 	}
-	else if (ubAmmoType == AMMO_EXPL)
-	{
-		// explosive rounds: a mini grenade's explosion (damage and animation)
-		// where the round hits a soldier or stops in a wall or the ground. The
-		// round still hits as a bullet: FALSE lets the usual hit or miss go on.
-		if (!fSoundOnly && sGridNo != NOWHERE)
-		{
-			IgniteExplosionXY(attacker, sXPos, sYPos, 0, sGridNo, MINI_GRENADE, sZPos >= WALL_HEIGHT ? 1 : 0);
-		}
-		return FALSE;
-	}
 	else if (ubAmmoType == AMMO_MONSTER)
 	{
 		UINT16 gas = GCM->getWeapon(usItem)->usSmokeEffect;
@@ -1990,6 +1979,17 @@ void StructureHit(BULLET* const pBullet, const UINT16 usStructureID, const INT32
 			IgniteExplosion(attacker, 0, sGridNo, C1, sZPos >= WALL_HEIGHT);
 			//FreeUpAttacker(attacker);
 
+			return;
+		}
+
+		// explosive rounds (AMMO_EXPL): only a mini grenade's explosion where the
+		// round stops, no bullet damage to the wall or the ground
+		if (pBullet->ubAmmoType == AMMO_EXPL)
+		{
+			RemoveBullet(pBullet);
+			SLOGD("Freeing up attacker - explosive round hit structure");
+			FreeUpAttacker(attacker);
+			IgniteExplosion(attacker, 0, sGridNo, MINI_GRENADE, sZPos >= WALL_HEIGHT);
 			return;
 		}
 

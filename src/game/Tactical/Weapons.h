@@ -82,7 +82,7 @@ enum
 	AMMO_HEAT,
 	AMMO_SLEEP_DART,
 	AMMO_FLAME,
-	AMMO_EXPL, // explosive rounds: a MINI_GRENADE explosion where the round hits or stops, on top of its damage
+	AMMO_EXPL, // explosive rounds: only a MINI_GRENADE explosion where the round hits or stops, no bullet damage
 };
 
 // Shotgun shells that fire NUM_BUCKSHOT_PELLETS pellets: buckshot and flechette.
