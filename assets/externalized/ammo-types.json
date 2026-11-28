@@ -50,5 +50,9 @@
     {
         "index": 12,
         "internalName": "AMMO_FLAME"
+    },
+    {
+        "index": 13,
+        "internalName": "AMMO_EXPL"
     }
 ]

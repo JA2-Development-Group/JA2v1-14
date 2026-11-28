@@ -3082,7 +3082,8 @@ void INVRenderItem(SGPVSurface* const buffer, SOLDIERTYPE const* const s, OBJECT
 				case AMMO_HP:
 				case AMMO_BUCKSHOT: colour = layout ? layout->colHP          : ITEMDESC_FONTHPFORE;   break;
 				case AMMO_HE:       colour = layout ? layout->colHE          : ITEMDESC_FONTHEFORE;   break;
-				case AMMO_HEAT:     colour = layout ? layout->colHEAP        : ITEMDESC_FONTHEAPFORE; break;
+				case AMMO_HEAT:
+				case AMMO_EXPL:     colour = layout ? layout->colHEAP        : ITEMDESC_FONTHEAPFORE; break;
 				default:            colour = layout ? layout->colAmmoDefault : FONT_MCOLOR_DKGRAY;    break;
 			}
 			SetFontForeground(colour);

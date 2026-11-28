@@ -1875,6 +1875,17 @@ static BOOLEAN DoSpecialEffectAmmoMiss(SOLDIERTYPE* const attacker, const INT16 
 
 		return( TRUE );
 	}
+	else if (ubAmmoType == AMMO_EXPL)
+	{
+		// explosive rounds: a mini grenade's explosion (damage and animation)
+		// where the round hits a soldier or stops in a wall or the ground. The
+		// round still hits as a bullet: FALSE lets the usual hit or miss go on.
+		if (!fSoundOnly && sGridNo != NOWHERE)
+		{
+			IgniteExplosionXY(attacker, sXPos, sYPos, 0, sGridNo, MINI_GRENADE, sZPos >= WALL_HEIGHT ? 1 : 0);
+		}
+		return FALSE;
+	}
 	else if (ubAmmoType == AMMO_MONSTER)
 	{
 		UINT16 gas = GCM->getWeapon(usItem)->usSmokeEffect;

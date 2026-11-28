@@ -3708,7 +3708,7 @@
         "internalName": "CLIP127_108_5_EXPL",
         "calibre": "AMMO127_108",
         "capacity": 5,
-        "ammoType": "AMMO_HE",
+        "ammoType": "AMMO_EXPL",
         "inventoryGraphics": {
             "small": {
                 "path": "interface/md_new_items.sti",
