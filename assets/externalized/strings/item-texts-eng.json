@@ -149,9 +149,9 @@
     {
         "internalName": "DRAGUNOV",
         "shortName": "Dragunov",
-        "name": "Dragunov",
+        "name": "SVD Dragunov",
         "description": "Reach out and touch someone the Russian Army way. This rifle has struck more than fear into the hearts of officers worldwide.",
-        "bobbyRayName": "Dragunov",
+        "bobbyRayName": "SVD Dragunov",
         "bobbyRayDescription": "This Russian sniping rifle is known for its accuracy. Standard issues with the rifle are the PSO-1 telescope sight and the image-intensifying NSPU-3 night sight."
     },
     {
@@ -2785,7 +2785,7 @@
 	
 	
 	
-	// ASAULT RIFLES: 1601 - 1800
+	// ASSAULT RIFLES: 1601 - 1800
 	
 	
 	// 1601
@@ -2905,13 +2905,143 @@
         "bobbyRayName": "AS Val",
         "bobbyRayDescription": "The tactical applications of a silenced assault weapon are limited only by the imagination (and moral inclinations) of the user."
     },
+	
+	
+	
+	
+	
+	// RIFLES: 1801 - 1900
 
 	
 	
+	// 1801
+    {
+        "internalName": "MINI30",
+        "shortName": "Mini-30",
+        "name": "Ruger Mini-30",
+        "description": "This Sturm Ruger rifle use 7.62 WP rounds. Mini Thirty are gas-operated, and have a positive Garand-type safety.",
+        "bobbyRayName": "Ruger Mini-30",
+        "bobbyRayDescription": "Mini Thirty - this Sturm Ruger rifle use 7.62 WP rounds."
+    },
 	
 	
 	
 	
+	
+	
+	// SNIPER RIFLES: 1901 - 2000
+
+
+
+	// 1901
+    {
+        "internalName": "VINTOREZ",
+        "shortName": "VSS",
+        "name": "VSS Vintorez",
+        "description": "This silent sniper rifle from Russia fires heavy 9mm bullets at subsonic speeds and apparently can pierce all types of body armor at over 400 meters.",
+        "bobbyRayName": "VSS Vintorez",
+        "bobbyRayDescription": "This silent sniper rifle from Russia fires heavy 9mm bullets at subsonic speeds and apparently can pierce all types of body armor at over 400 meters."
+    },
+	// 1902
+    {
+        "internalName": "SVU",
+        "shortName": "SVU",
+        "name": "SVU",
+        "description": "The Snaiperskaya Vintovka Ukorochennay, Short Sniper Rifle, is a shortened variant of the famous Dragunov sniper rifle, with a bullpup configuration.",
+        "bobbyRayName": "SVU",
+        "bobbyRayDescription": "This rifle is more compact and has a somewhat shorter effective range than the SVD. It's also more silent since the muzzle also has a flash and noise suppressor."
+    },
+	// 1903
+    {
+        "internalName": "PSG1",
+        "shortName": "PSG1",
+        "name": "HK PSG1",
+        "description": "This German made weapon exemplifies the country's reputation for precision and is a sniper's weapon of choice.",
+        "bobbyRayName": "HK PSG1",
+        "bobbyRayDescription": "This German made weapon exemplifies the country's reputation for precision and is a sniper's weapon of choice."
+    },
+	// 1904
+    {
+        "internalName": "MSG90A1",
+        "shortName": "MSG90A1",
+        "name": "HK MSG90A1",
+        "description": "The MSG-90 sniper rifle was made by Heckler-Koch as a militarized offspring of their PSG-1 police sniper rifle.",
+        "bobbyRayName": "HK MSG90A1",
+        "bobbyRayDescription": "The MSG-90 sniper rifle was made by Heckler-Koch as a militarized offspring of their PSG-1 police sniper rifle. It is fitted with barrel threading to accept screw-on silencers."
+    },
+	// 1905
+    {
+        "internalName": "M82A2",
+        "shortName": "M82A2",
+        "name": "Barrett M82A2",
+        "description": "This modified M82A2's bullpup layout places the action and barrel further back in the stock, retaining its barrel length while shortening its overall size.",
+        "bobbyRayName": "Barrett M82A2",
+        "bobbyRayDescription": "This modified M82A2's bullpup layout places the action and barrel further back in the stock, retaining its barrel length while shortening its overall size."
+    },
+	// 1906
+    {
+        "internalName": "OSV96",
+        "shortName": "OSV-96",
+        "name": "OSV-96",
+        "description": "This Russian monstrosity is a counter-sniper/anti-materiel rifle. At nearly 2 meters in length, this rifle is also useful for polevaulting.",
+        "bobbyRayName": "OSV-96",
+        "bobbyRayDescription": "This Russian monstrosity is a counter-sniper/anti-materiel rifle. At nearly 2 meters in length, this rifle is also useful for polevaulting."
+    },
+	
+
+
+
+
+	// LIGHT MUCHINE GUNS: 2001 - 2200
+
+
+	
+	// 2001
+    {
+        "internalName": "RPK",
+        "shortName": "RPK",
+        "name": "RPK",
+        "description": "Another product of Mikhail Kalashnikov, from Russia with love.",
+        "bobbyRayName": "RPK",
+        "bobbyRayDescription": "The RPK is essentially an AK-47 with a heavier barrel and stock. It can empty a 30 round magazine or a 75 round drum at 600rpm."
+    },
+	// 2002
+    {
+        "internalName": "PKM",
+        "shortName": "PKM",
+        "name": "PKM",
+        "description": "The PKM is the Russian equivalent of the US M60. It's a universal MG that fires the heavy Russian 7.62x54mm round instead of the 7.62x39mm WP.",
+        "bobbyRayName": "PKM",
+        "bobbyRayDescription": "Around since the 1960s, the PKM is one of the most famous Russian MGs and is used all over the world. Now you have the chance to show your enemies that old school Soviet weapons are still superior!"
+    },
+	// 2003
+    {
+        "internalName": "MG36RAS",
+        "shortName": "MG36 RAS",
+        "name": "HK MG36 RAS",
+        "description": "Not as bulky or heavy as other LMGs, this gun still has a rate of fire that will overwhelm enemies in no time.",
+        "bobbyRayName": "HK MG36 RAS",
+        "bobbyRayDescription": "HK has blessed us with their new, versatile, multi-role squad machine gun. This version is outfitted with Picatinny rails."
+    },
+	// 2004
+    {
+        "internalName": "M60E4",
+        "shortName": "M60E4",
+        "name": "M60E4",
+        "description": "M60E4 is an improved M60E3 for NAVY SEALs. The Mk43 Mod1 features a redesigned top cover with an integrated Picatinny rail and an Rail Interface System handguard provides for Mounting Optics, Infrared Laser Systems and other sensors.",
+        "bobbyRayName": "M60E4",
+        "bobbyRayDescription": "M60E4 is an improved M60E3 for NAVY SEALs. The Mk43 Mod1 features a redesigned top cover with an integrated Picatinny rail and an Rail Interface System handguard provides for Mounting Optics, Infrared Laser Systems and other sensors."
+    },
+	// 2005
+    {
+        "internalName": "M134",
+        "shortName": "Minigun",
+        "name": "M134 Minigun",
+        "description": "A six-barreled, electrically driven 7.62x51mm NATO Gatling gun modified for hip fire. Its devastating wall of lead shreds anything at short to medium range, but the extreme weight and lack of sights demand exceptional strength.",
+        "bobbyRayName": "M134 Minigun",
+        "bobbyRayDescription": "A six-barreled, electrically driven 7.62x51mm NATO Gatling-style machine gun modified for hip-fire operation. Capable of laying down a devastating wall of lead, it shreds anything at short-to-medium range. Its extreme weight and lack of traditional sights demand exceptional physical strength to wield it effectively."
+    },
+
 
 
 
@@ -3363,7 +3493,234 @@
         "description": "This mag contains 20 rounds of NATO standard 7.62mm Super AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges.",
         "bobbyRayName": "7.62x51mm NATO Mag, 20 Super AP",
         "bobbyRayDescription": "This 7.62mm 20-round super armor piercing magazine is simply brimming with death, especially when it's filled with a surplus of Full Metal Jacketed rounds. This magazine makes armor more or less moot."
+    },
+	// 3049
+    {
+        "internalName": "CLIP762N_100_HP",
+        "shortName": "7.62 NATO Belt HP",
+        "name": "7.62x51mm Belt HP",
+        "description": "This heavy machine gun belt holds 100 rounds of .308 Winchester ammunition, the civilian variant of the 7.62 NATO round. It is best suited for hunting unarmored targets.",
+        "bobbyRayName": "7.62x51mm Belt HP",
+        "bobbyRayDescription": "This heavy machine gun belt holds 100 rounds of .308 Winchester ammunition, the civilian variant of the 7.62 NATO round. It is best suited for hunting unarmored targets."
+    },
+	// 3050
+    {
+        "internalName": "CLIP762N_100_AP",
+        "shortName": "7.62 NATO Belt AP",
+        "name": "7.62x51mm Belt AP",
+        "description": "This belt contains 100 rounds of NATO standard 7.62mm AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges.",
+        "bobbyRayName": "7.62x51mm Belt AP",
+        "bobbyRayDescription": "This belt contains 100 rounds of NATO standard 7.62mm AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges."
+    },
+	// 3051
+    {
+        "internalName": "CLIP762N_100_SUPER_AP",
+        "shortName": "7.62 NATO Belt SAP",
+        "name": "7.62x51mm Belt Super AP",
+        "description": "This belt contains 100 rounds of NATO standard 7.62mm Super AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges.",
+        "bobbyRayName": "7.62x51mm Belt Super AP",
+        "bobbyRayDescription": "This belt contains 100 rounds of NATO standard 7.62mm Super AP ammo. This round has gained favorable attention from armed forces worldwide due to its ability to penetrate a steel helmet at extreme ranges."
+    },
+	// 3052
+    {
+        "internalName": "CLIP545_45_HP",
+        "shortName": "5.45mm RPK-Mag HP",
+        "name": "5.45x39mm RPK-Mag HP",
+        "description": "This 45-round magazine contains 5.45 jacketed hollow point ammunition. It features the combined effect of mushrooming on impact and tumbling within its target to create enormous wound cavities.",
+        "bobbyRayName": "5.45x39mm RPK-Mag HP",
+        "bobbyRayDescription": "This 45-round magazine contains 5.45 jacketed hollow point ammunition. It features the combined effect of mushrooming on impact and tumbling within its target to create enormous wound cavities."
+    },
+	// 3053
+    {
+        "internalName": "CLIP545_45_AP",
+        "shortName": "5.45mm RPK-Mag AP",
+        "name": "5.45x39mm RPK-Mag AP",
+        "description": "This 45-round magazine holds 5.45 light armor-piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well.",
+        "bobbyRayName": "5.45x39mm RPK-Mag AP",
+        "bobbyRayDescription": "This 45-round magazine holds 5.45 light armor-piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well."
+    },
+	// 3054
+    {
+        "internalName": "CLIP545_45_SUPER_AP",
+        "shortName": "5.45mm RPK-Mag SAP",
+        "name": "5.45x39mm RPK-Mag Super AP",
+        "description": "This 45-round magazine holds 5.45 light super armor-piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well.",
+        "bobbyRayName": "5.45x39mm RPK-Mag Super AP",
+        "bobbyRayDescription": "This 45-round magazine holds 5.45 light super armor-piercing anti-personnel ammo. Its metal jacketing not only improves its ability to punch through walls, but it can tear through multiple bodies as well."
+    },
+	// 3055
+    {
+        "internalName": "CLIP762W_75_HP",
+        "shortName": "7.62mm Drum HP",
+        "name": "7.62x39mm Drum HP",
+        "description": "This drum contains 75 rounds of 7.62 Warsaw Pact hollow point ammo. Although use of this round against light armored opponents can sway a battle in your favor, it's less effective against heavy armor.",
+        "bobbyRayName": "7.62x39mm Drum HP",
+        "bobbyRayDescription": "When killing them is simply not enough, a huge 75 round drum of 7.62mm hollow point is a great way to send the point home, in true brain-splattering style."
+    },
+	// 3056
+    {
+        "internalName": "CLIP762W_75_AP",
+        "shortName": "7.62mm Drum AP",
+        "name": "7.62x39mm Drum AP",
+        "description": "When it's time to end the fire fight, snap in a drum of hard-hitting 7.62x39mm.",
+        "bobbyRayName": "7.62x39mm Drum AP",
+        "bobbyRayDescription": "This long-serving heavy cartridge comes in convenient drums."
+    },
+	// 3057
+    {
+        "internalName": "CLIP762W_75_SUPER_AP",
+        "shortName": "7.62mm Drum SAP",
+        "name": "7.62x39mm Drum Super AP",
+        "description": "When it's time to end the fire fight, snap in a drum of hard-hitting super armor piercing 7.62x39mm.",
+        "bobbyRayName": "7.62x39mm Drum Super AP",
+        "bobbyRayDescription": "This long-serving heavy cartridge comes in convenient drums with super armor piercing."
+    },
+	// 3058
+    {
+        "internalName": "CLIP556_100_HP",
+        "shortName": "5.56 Belt HP",
+        "name": "5.56x45mm Belt 100 HP",
+        "description": "This 100-round belt of 5.56 Remington hollow point ammo is a variation of the civilian .223 hunting round. Like the .223, it is designed to maximize nerve shock and blood loss.",
+        "bobbyRayName": "5.56x45mm Belt 100 HP",
+        "bobbyRayDescription": "This 100-round belt of 5.56 Remington hollow point ammo is a variation of the civilian .223 hunting round. Like the .223, it is designed to maximize nerve shock and blood loss."
+    },
+	// 3059
+    {
+        "internalName": "CLIP556_100_AP",
+        "shortName": "5.56mm Belt AP",
+        "name": "5.56x45mm Belt 100 AP",
+        "description": "These 100 rounds of NATO standard light armor-piercing ammunition have the ability to tumble within their target to create a much larger wound than what is normally expected from such a small bullet.",
+        "bobbyRayName": "5.56x45mm Belt 100 AP",
+        "bobbyRayDescription": "These 100 rounds of NATO standard light armor-piercing ammunition have the ability to tumble within their target to create a much larger wound than what is normally expected from such a small bullet."
+    },
+	// 3060
+    {
+        "internalName": "CLIP556_100_SUPER_AP",
+        "shortName": "5.56mm Belt SAP",
+        "name": "5.56x45mm Belt 100 Super AP",
+        "description": "These 100 rounds of NATO standard light super armor-piercing ammunition have the ability to tumble within their target to create a much larger wound than what is normally expected from such a small bullet.",
+        "bobbyRayName": "5.56x45mm Belt 100 Super AP",
+        "bobbyRayDescription": "These 100 rounds of NATO standard light super armor-piercing ammunition have the ability to tumble within their target to create a much larger wound than what is normally expected from such a small bullet."
+    },
+	// 3061
+    {
+        "internalName": "CLIP762_54_10_HP",
+        "shortName": "7.62mmR Mag, 10 HP",
+        "name": "7.62x54mmR Mag, 10 HP",
+        "description": "10 rounds of long range penetrating power for the 7.62x54 Rimmed HP chambered weapon in your collection.",
+        "bobbyRayName": "7.62x54mmR Mag, 10 HP",
+        "bobbyRayDescription": "10 rounds of long range penetrating power for the 7.62x54 Rimmed HP chambered weapon in your collection."
+    },
+	// 3062
+    {
+        "internalName": "CLIP762_54_10_AP",
+        "shortName": "7.62mmR Mag 10 AP",
+        "name": "7.62x54mmR Mag 10 AP",
+        "description": "10 rounds of long range penetrating power for the 7.62x54 Rimmed AP chambered weapon in your collection.",
+        "bobbyRayName": "7.62x54mmR Mag 10 AP",
+        "bobbyRayDescription": "10 rounds of long range penetrating power for the 7.62x54 Rimmed AP chambered weapon in your collection."
+    },
+	// 3063
+    {
+        "internalName": "CLIP762_54_10_SUPER_AP",
+        "shortName": "7.62mmR Mag, 10 SAP",
+        "name": "7.62x54mmR Mag, 10 Super AP",
+        "description": "10 rounds of long range penetrating power for the 7.62x54 Rimmed Super AP chambered weapon in your collection.",
+        "bobbyRayName": "7.62x54mmR Mag, 10 Super AP",
+        "bobbyRayDescription": "10 rounds of long range penetrating power for the 7.62x54 Rimmed Super AP chambered weapon in your collection."
+    },
+	// 3064
+    {
+        "internalName": "CLIP762_54_100_HP",
+        "shortName": "7.62mmR Belt HP",
+        "name": "7.62x54mmR Belt HP",
+        "description": "100 round belt of 7.62x54 Rimmed HP ammo.",
+        "bobbyRayName": "7.62x54mmR Belt HP",
+        "bobbyRayDescription": "Crack open a belt of 7.62x54 Rimmed HP when it's time to reload the squad PKM."
+    },
+	// 3065
+    {
+        "internalName": "CLIP762_54_100_AP",
+        "shortName": "7.62mmR Belt AP",
+        "name": "7.62x54mmR Belt AP",
+        "description": "100 round belt of 7.62x54 Rimmed AP ammo.",
+        "bobbyRayName": "7.62x54mmR Belt AP",
+        "bobbyRayDescription": "Crack open a belt of 7.62x54 Rimmed AP when it's time to reload the squad PKM."
+    },
+	// 3066
+    {
+        "internalName": "CLIP762_54_100_SUPER_AP",
+        "shortName": "7.62x54R Belt SAP",
+        "name": "7.62x54mmR Belt Super AP",
+        "description": "100 round belt of 7.62x54 Rimmed Super AP ammo.",
+        "bobbyRayName": "7.62x54mmR Belt Super AP",
+        "bobbyRayDescription": "Crack open a belt of 7.62x54 Rimmed Super AP ammo."
+    },
+	// 3067
+    {
+        "internalName": "CLIP127_99_10_HP",
+        "shortName": ".50 BMG Mag HP",
+        "name": ".50 BMG (12.7x99mm) Magazine, HP",
+        "description": "A 10-round magazine of .50 caliber HP (Browning) bullets for the Barrett M82A2.",
+        "bobbyRayName": ".50 BMG (12.7x99mm) Magazine, HP",
+        "bobbyRayDescription": "A 10-round magazine of .50 caliber HP (Browning) bullets for the Barrett M82A2."
+    },
+	// 3068
+    {
+        "internalName": "CLIP127_99_10_AP",
+        "shortName": ".50 BMG Mag AP",
+        "name": ".50 BMG (12.7x99mm) Magazine, AP",
+        "description": "A 10-round magazine of .50 caliber AP (Browning) bullets for the Barrett M82A2.",
+        "bobbyRayName": ".50 BMG (12.7x99mm) Magazine, AP",
+        "bobbyRayDescription": "A 10-round magazine of .50 caliber AP (Browning) bullets for the Barrett M82A2."
+    },
+	// 3069
+    {
+        "internalName": "CLIP127_99_10_SUPER_AP",
+        "shortName": ".50 BMG Mag SAP",
+        "name": ".50 BMG (12.7x99mm) Magazine, Super AP",
+        "description": "A 10-round magazine of .50 caliber Super AP (Browning) bullets for the Barrett M82A2.",
+        "bobbyRayName": ".50 BMG (12.7x99mm) Magazine, Super AP",
+        "bobbyRayDescription": "A 10-round magazine of .50 caliber Super AP (Browning) bullets for the Barrett M82A2."
+    },
+	// 3070
+    {
+        "internalName": "CLIP127_108_5_EXPL",
+        "shortName": "12.7x108mm Mag EXPL",
+        "name": "12.7x108mm Mag Explosives",
+        "description": "Mini .50 magazine for heavy anti-materiel rifles.",
+        "bobbyRayName": "12.7x108mm Mag Explosives",
+        "bobbyRayDescription": "Penetrate light armor vehicles from considerable range with a clip full of 12.7mm."
+    },
+	// 3071
+    {
+        "internalName": "CLIP939_10_HP",
+        "shortName": "9mm Mag, 10 HP",
+        "name": "9x39mm Mag, 10 HP",
+        "description": "SP6, new russian HP ammunition for VSS Vintorez.",
+        "bobbyRayName": "9x39mm Mag, 10 HP",
+        "bobbyRayDescription": "SP6, new russian HP ammunition for VSS Vintorez."
+    },
+	// 3072
+    {
+        "internalName": "CLIP939_10_AP",
+        "shortName": "9mm Mag, 10 AP",
+        "name": "9x39mm Mag, 10 AP",
+        "description": "SP6, new russian armor piercing ammunition for VSS Vintorez.",
+        "bobbyRayName": "9x39mm Mag, 10 AP",
+        "bobbyRayDescription": "SP6, new russian armor piercing ammunition for VSS Vintorez."
+    },
+	// 3073
+    {
+        "internalName": "CLIP939_10_SUPER_AP",
+        "shortName": "9mm Mag, 10 SAP",
+        "name": "9x39mm Mag, 10 Super AP",
+        "description": "SP6, new russian super armor piercing ammunition for VSS Vintorez.",
+        "bobbyRayName": "9x39mm Mag, 10 Super AP",
+        "bobbyRayDescription": "SP6, new russian super armor piercing ammunition for VSS Vintorez."
     }
+
+
 
 
 	

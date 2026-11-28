@@ -78,17 +78,28 @@
         "M14": 3,
         "SCAR_HSV": 3,
 		
+		"MINI14": 3,
+		"MINI30": 3,
+		"SKS": 3,
 		
+		"VINTOREZ": 2,
+		"M24": 2,
+		"PSG1": 2,
+		"MSG90A1": 2,
+		"SVU": 2,
+		"DRAGUNOV": 2,
+		"M82A2": 2,
+		"OSV96": 2,
 		
-		
-		"MINI14": 2,
-		"SKS": 1,
-		"DRAGUNOV": 1,
-        "M24": 1,
-
         "MINIMI": 1,
+		"MG36RAS": 1,
         "RPK74": 1,
+		"RPK": 1,
+		"PKM": 1,
+		"M60E4": 1,
         "HK21E": 1,
+		"M134": 1,
+		
         "COMBAT_KNIFE": 5,
         "THROWING_KNIFE": 5,
         "GLAUNCHER": 1,
@@ -185,10 +196,18 @@
 		"CLIP545_30_HP": 20,
         "CLIP545_30_AP": 10,
 		"CLIP545_30_SUPER_AP": 5,
+		
+		"CLIP545_45_HP": 15,
+		"CLIP545_45_AP": 10,
+		"CLIP545_45_SUPER_AP": 5,
         
 		"CLIP556_30_HP": 20,
         "CLIP556_30_AP": 10,
 		"CLIP556_30_SUPER_AP": 5,
+		
+		"CLIP556_100_HP": 10,
+		"CLIP556_100_AP": 5,
+		"CLIP556_100_SUPER_AP": 3,
         
 		"CLIP762_25_30_HP": 20,
 		"CLIP762_25_30_AP": 10,
@@ -202,6 +221,10 @@
 		"CLIP762W_30_AP": 10,
 		"CLIP762W_30_SUPER_AP": 5,
 		
+		"CLIP762W_75_HP": 10,
+		"CLIP762W_75_AP": 5,
+		"CLIP762W_75_SUPER_AP": 3,
+		
 		"CLIP762N_5_HP": 20,
         "CLIP762N_5_AP": 10,
 		"CLIP762N_5_SUPER_AP": 5,
@@ -209,6 +232,28 @@
 		"CLIP762N_20_HP": 20,
         "CLIP762N_20_AP": 10,
 		"CLIP762N_20_SUPER_AP": 5,
+		
+		"CLIP762N_100_HP": 10,
+		"CLIP762N_100_AP": 5,
+		"CLIP762N_100_SUPER_AP": 3,
+		
+		"CLIP762_54_10_HP": 15,
+		"CLIP762_54_10_AP": 10,
+		"CLIP762_54_10_SUPER_AP": 5,
+		
+		"CLIP762_54_100_HP": 10,
+		"CLIP762_54_100_AP": 5,
+		"CLIP762_54_100_SUPER_AP": 3,
+		
+		"CLIP127_99_10_HP": 15,
+		"CLIP127_99_10_AP": 10,
+		"CLIP127_99_10_SUPER_AP": 5,
+		
+		"CLIP127_108_5_EXPL": 5,
+		
+		"CLIP939_10_HP": 20,
+		"CLIP939_10_AP": 15,
+		"CLIP939_10_SUPER_AP": 10,
         
         
         "STUN_GRENADE": 5,

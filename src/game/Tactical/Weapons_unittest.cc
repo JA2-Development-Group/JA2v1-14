@@ -170,10 +170,10 @@ TEST(WeaponsTest, FixedAPCosts)
 
 	auto rpk = OBJECTTYPE{};
 	rpk.usItem = cm->getWeaponByName("RPK74")->getItemIndex();
-	EXPECT_EQ(BaseAPsToShootOrStab(rpk), 6);
-	EXPECT_EQ(CalcAPsToBurst(rpk, WM_BURST_SHORT), 4);
+	EXPECT_EQ(BaseAPsToShootOrStab(rpk), 8);
+	EXPECT_EQ(CalcAPsToBurst(rpk, WM_BURST_SHORT), 2);  // the whole burst costs 10, 12, 20
 	EXPECT_EQ(CalcAPsToBurst(rpk, WM_BURST_LONG), 4);
-	EXPECT_EQ(CalcAPsToBurst(rpk, WM_BURST_FULL), 4);
+	EXPECT_EQ(CalcAPsToBurst(rpk, WM_BURST_FULL), 12);
 	EXPECT_EQ(CalcAPsToBurst(rpk, WM_NORMAL), 0);
 
 	// Spring and Bolt: a fixed -1 AP for any status, a burst drops only once
@@ -181,14 +181,14 @@ TEST(WeaponsTest, FixedAPCosts)
 	for (int const status : { 1, 100 })
 	{
 		rpk.bAttachStatus[0] = static_cast<INT8>(status);
-		EXPECT_EQ(BaseAPsToShootOrStab(rpk), 5);
+		EXPECT_EQ(BaseAPsToShootOrStab(rpk), 7);
 		EXPECT_EQ(BaseAPsToShootOrStab(rpk) + CalcAPsToBurst(rpk, WM_BURST_SHORT), 9);
 	}
 
 	// A weapon without a burst value: its cost + 4
 	auto m24 = OBJECTTYPE{};
 	m24.usItem = cm->getWeaponByName("M24")->getItemIndex();
-	EXPECT_EQ(BaseAPsToShootOrStab(m24), 10);
+	EXPECT_EQ(BaseAPsToShootOrStab(m24), 8);
 	EXPECT_EQ(CalcAPsToBurst(m24, WM_BURST_SHORT), 4);
 
 	// Ready time: a grenade launcher's own, and the underslung one's own, not
@@ -222,7 +222,7 @@ TEST(WeaponsTest, FixedAPCosts)
 
 	auto minimi = OBJECTTYPE{};
 	minimi.usItem = MINIMI;
-	EXPECT_EQ(BaseAPsToShootOrStab(minimi), 6);
+	EXPECT_EQ(BaseAPsToShootOrStab(minimi), 8);
 	EXPECT_EQ(BaseAPsToShootOrStab(minimi) + CalcAPsToBurst(minimi, WM_BURST_SHORT), 10);
 
 	delete cm;
